@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0cf21660-7072-429b-abdc-cfd4b9e3d3a7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Novella</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BooksList.xaml.cs">
+      <DependentUpon>BooksList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomFormat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Book.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\BookModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Dialogue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DialogueModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plays.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StateManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\1henryiv.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\1henryvi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\2henryiv.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\2henryvi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\3henryvi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\alls_well.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\antony_and_cleopatra.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\asyoulikeit.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\comedy_of_errors.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\coriolanus.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\cymbeline.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\hamlet.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\henryv.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\henryviii.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\john.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\julius_caesar.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\king_lear.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\lll.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\macbeth.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\measure.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\merchant.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\merry_wives.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\midsummer.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\much_ado.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\othello.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\pericles.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\richardii.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\richardiii.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\romeo_juliet.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\taming_shrew.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\tempest.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\timon_of_athens.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\titus_andronicus.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\troilus_cressida.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\twelfth_night.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\two_gentlemen.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BookCovers\winters_tale.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)BooksList.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\1henryiv.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\1henryvi.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\2henryiv.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\2henryvi.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\3henryvi.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\allswell.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\asyoulikeit.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\cleopatra.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\comedy_errors.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\coriolanus.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\cymbeline.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\hamlet.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\henryv.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\henryviii.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\john.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\julius_caesar.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\lear.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\lll.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\macbeth.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\measure.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\merchant.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\merry_wives.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\midsummer.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\much_ado.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\Othello.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\pericles.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\richardii.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\richardiii.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\romeo_juliet.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\taming_shrew.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\tempest.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\timon.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\titus.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\troilus_cressida.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\twelfth_night.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\two_gentlemen.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\winters_tale.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\JuliusCaesar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)BooksList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

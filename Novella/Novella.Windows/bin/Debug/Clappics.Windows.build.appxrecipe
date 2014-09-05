@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VAAGRAW-LP</Machine>
+    <WindowsUser>vaagraw</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>67f1c7c3-11b7-472c-92bf-d61ea77414d4</PackageIdentityName>
+    <IntermediateOutputPath>D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\Clappics.Windows.exe">
+      <PackagePath>Clappics.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Shared\Images\JuliusCaesar.png">
+      <PackagePath>Images\JuliusCaesar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Shared\Books\j_caesar.xml">
+      <PackagePath>Books\j_caesar.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Shared\Books\RomeoAndJuliet.txt">
+      <PackagePath>Books\RomeoAndJuliet.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\Clappics.Windows.xr.xml">
+      <PackagePath>Clappics.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Clappics\Clappics\Clappics\Clappics.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

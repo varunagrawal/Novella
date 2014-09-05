@@ -1,0 +1,2 @@
+D:\Side Projects\Novella\CoverFlowControl\CoverFlowControl.csproj;neutral
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\Novella.WindowsPhone.csproj;neutral

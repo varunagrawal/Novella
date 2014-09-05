@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VAAGRAW-LP</Machine>
+    <WindowsUser>vaagraw</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>67f1c7c3-11b7-472c-92bf-d61ea77414d4</PackageIdentityName>
+    <IntermediateOutputPath>D:\Side Projects\Novella\Novella\Novella.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\Novella.Windows.exe">
+      <PackagePath>Novella.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.dll">
+      <PackagePath>CoverFlowControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Images\JuliusCaesar.png">
+      <PackagePath>Images\JuliusCaesar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Model\julius_caesar.png">
+      <PackagePath>Model\julius_caesar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\1henryiv.jpg">
+      <PackagePath>BookCovers\1henryiv.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\1henryvi.jpg">
+      <PackagePath>BookCovers\1henryvi.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\2henryiv.jpg">
+      <PackagePath>BookCovers\2henryiv.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\2henryvi.jpg">
+      <PackagePath>BookCovers\2henryvi.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\3henryvi.jpg">
+      <PackagePath>BookCovers\3henryvi.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\alls_well.jpg">
+      <PackagePath>BookCovers\alls_well.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\antony_and_cleopatra.jpg">
+      <PackagePath>BookCovers\antony_and_cleopatra.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\asyoulikeit.jpg">
+      <PackagePath>BookCovers\asyoulikeit.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\comedy_of_errors.jpg">
+      <PackagePath>BookCovers\comedy_of_errors.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\coriolanus.jpg">
+      <PackagePath>BookCovers\coriolanus.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\cymbeline.jpg">
+      <PackagePath>BookCovers\cymbeline.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\hamlet.jpg">
+      <PackagePath>BookCovers\hamlet.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\henryv.jpg">
+      <PackagePath>BookCovers\henryv.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\henryviii.jpg">
+      <PackagePath>BookCovers\henryviii.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\john.jpg">
+      <PackagePath>BookCovers\john.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\julius_caesar.jpg">
+      <PackagePath>BookCovers\julius_caesar.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\king_lear.jpg">
+      <PackagePath>BookCovers\king_lear.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\lll.jpg">
+      <PackagePath>BookCovers\lll.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\macbeth.jpg">
+      <PackagePath>BookCovers\macbeth.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\measure.jpg">
+      <PackagePath>BookCovers\measure.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\merchant.jpg">
+      <PackagePath>BookCovers\merchant.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\merry_wives.jpg">
+      <PackagePath>BookCovers\merry_wives.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\midsummer.jpg">
+      <PackagePath>BookCovers\midsummer.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\much_ado.jpg">
+      <PackagePath>BookCovers\much_ado.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\othello.jpg">
+      <PackagePath>BookCovers\othello.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\pericles.jpg">
+      <PackagePath>BookCovers\pericles.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\richardii.jpg">
+      <PackagePath>BookCovers\richardii.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\richardiii.jpg">
+      <PackagePath>BookCovers\richardiii.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\romeo_juliet.jpg">
+      <PackagePath>BookCovers\romeo_juliet.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\taming_shrew.jpg">
+      <PackagePath>BookCovers\taming_shrew.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\tempest.jpg">
+      <PackagePath>BookCovers\tempest.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\timon_of_athens.jpg">
+      <PackagePath>BookCovers\timon_of_athens.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\titus_andronicus.jpg">
+      <PackagePath>BookCovers\titus_andronicus.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\troilus_cressida.jpg">
+      <PackagePath>BookCovers\troilus_cressida.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\twelfth_night.jpg">
+      <PackagePath>BookCovers\twelfth_night.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\two_gentlemen.jpg">
+      <PackagePath>BookCovers\two_gentlemen.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\winters_tale.jpg">
+      <PackagePath>BookCovers\winters_tale.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BooksList.txt">
+      <PackagePath>BooksList.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\1henryiv.txt">
+      <PackagePath>Books\1henryiv.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\1henryvi.txt">
+      <PackagePath>Books\1henryvi.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\2henryiv.txt">
+      <PackagePath>Books\2henryiv.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\2henryvi.txt">
+      <PackagePath>Books\2henryvi.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\3henryvi.txt">
+      <PackagePath>Books\3henryvi.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\allswell.txt">
+      <PackagePath>Books\allswell.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\asyoulikeit.txt">
+      <PackagePath>Books\asyoulikeit.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\cleopatra.txt">
+      <PackagePath>Books\cleopatra.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\comedy_errors.txt">
+      <PackagePath>Books\comedy_errors.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\coriolanus.txt">
+      <PackagePath>Books\coriolanus.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\cymbeline.txt">
+      <PackagePath>Books\cymbeline.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\hamlet.txt">
+      <PackagePath>Books\hamlet.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\henryv.txt">
+      <PackagePath>Books\henryv.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\henryviii.txt">
+      <PackagePath>Books\henryviii.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\john.txt">
+      <PackagePath>Books\john.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\julius_caesar.txt">
+      <PackagePath>Books\julius_caesar.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\lear.txt">
+      <PackagePath>Books\lear.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\lll.txt">
+      <PackagePath>Books\lll.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\macbeth.txt">
+      <PackagePath>Books\macbeth.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\measure.txt">
+      <PackagePath>Books\measure.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\merchant.txt">
+      <PackagePath>Books\merchant.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\merry_wives.txt">
+      <PackagePath>Books\merry_wives.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\midsummer.txt">
+      <PackagePath>Books\midsummer.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\much_ado.txt">
+      <PackagePath>Books\much_ado.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\Othello.txt">
+      <PackagePath>Books\Othello.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\pericles.txt">
+      <PackagePath>Books\pericles.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\richardii.txt">
+      <PackagePath>Books\richardii.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\richardiii.txt">
+      <PackagePath>Books\richardiii.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\romeo_juliet.txt">
+      <PackagePath>Books\romeo_juliet.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\taming_shrew.txt">
+      <PackagePath>Books\taming_shrew.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\tempest.txt">
+      <PackagePath>Books\tempest.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\timon.txt">
+      <PackagePath>Books\timon.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\titus.txt">
+      <PackagePath>Books\titus.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\troilus_cressida.txt">
+      <PackagePath>Books\troilus_cressida.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\twelfth_night.txt">
+      <PackagePath>Books\twelfth_night.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\two_gentlemen.txt">
+      <PackagePath>Books\two_gentlemen.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\winters_tale.txt">
+      <PackagePath>Books\winters_tale.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList.xbf">
+      <PackagePath>BooksList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\Themes\Generic.xbf">
+      <PackagePath>CoverFlowControl\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\Novella.Windows.xr.xml">
+      <PackagePath>Novella.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.xr.xml">
+      <PackagePath>CoverFlowControl\CoverFlowControl.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

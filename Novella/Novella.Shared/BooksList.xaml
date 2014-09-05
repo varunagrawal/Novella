@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Novella.BooksList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novella"
+    xmlns:controls="using:CoverFlowControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,27,0,562" />
+
+        <controls:CoverFlow x:Name="CoverFlow" Height="400" Tapped="CoverFlow_Tapped" ItemClick="CoverFlow_ItemClick">
+            <controls:CoverFlow.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Cover}" Height="400" />
+                </DataTemplate>
+            </controls:CoverFlow.ItemTemplate>
+        </controls:CoverFlow>
+        
+        <!--ListView x:Name="Books" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Tapped="Books_Tapped" ItemClick="Books_ItemClick" IsItemClickEnabled="True" Margin="0,83,0,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0">
+                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="40" FontSize="25" FontWeight="Bold" Margin="5,0,5,0" />
+                    </StackPanel>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate-->
+        
+    </Grid>
+</Page>
