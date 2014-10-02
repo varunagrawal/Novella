@@ -41,9 +41,6 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Images\JuliusCaesar.png">
       <PackagePath>Images\JuliusCaesar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Model\julius_caesar.png">
-      <PackagePath>Model\julius_caesar.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\BookCovers\1henryiv.jpg">
       <PackagePath>BookCovers\1henryiv.jpg</PackagePath>
     </AppxPackagedFile>
@@ -272,11 +269,11 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList.xbf">
-      <PackagePath>BooksList.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList.xbf">
+      <PackagePath>BooksList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\Themes\Generic.xbf">
       <PackagePath>CoverFlowControl\Themes\Generic.xbf</PackagePath>

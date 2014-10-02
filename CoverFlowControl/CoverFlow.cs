@@ -39,7 +39,7 @@ namespace CoverFlowControl
         private Dictionary<object, CoverFlowItem> _objectToItemContainer;
         private List<CoverFlowItem> items;
 
-        private const double _threshold = 80.0; // Higher values == lower sensitivity
+        private const double _threshold = 170.0; // Higher values == lower sensitivity
         private double _distance = 0.0;
         private bool _begin = true;
 

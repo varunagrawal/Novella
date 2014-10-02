@@ -30,7 +30,7 @@ namespace Novella
                 foreach (string line in lines)
                 {
                     var d = new Dialogue();
-                    var types = line.Split(':');
+                    var types = line.Split('#');
 
                     d.LineType = (Constants.LineType)Enum.Parse(typeof(Constants.LineType), types[0]);
 
@@ -78,8 +78,9 @@ namespace Novella
 
                 return dialogues;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return null;
             }
         }

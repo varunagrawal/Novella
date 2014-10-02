@@ -22,8 +22,8 @@
                 <DataTemplate>
                     
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0" Background="DarkGreen">
-                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="35" FontSize="25" TextAlignment="{Binding Alignment}" FontWeight="Bold" Margin="5,0,5,0" />
-                        <TextBlock Text="{Binding Line}" TextWrapping="Wrap" Height="30" FontSize="20" TextAlignment="{Binding Alignment}" Margin="10,0,10,0" />
+                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="Auto" FontSize="15" TextAlignment="{Binding Alignment}" FontWeight="Light" Margin="5,10,5,0" />
+                        <TextBlock Text="{Binding Line}" TextWrapping="Wrap" Height="30" FontSize="20" TextAlignment="{Binding Alignment}" Margin="10,0,10,5" />
                     </StackPanel>
                     <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
                         --><!--Image Source="{Binding Picture}" Height="50" Width="50" /--><!--

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoverFlowControl;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -15,7 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace Novella
 {
@@ -42,21 +43,26 @@ namespace Novella
 
         }
 
-        private void Books_Tapped(object sender, TappedRoutedEventArgs e)
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            //Debug.WriteLine("Tapped");
-            //var selected = (Book)e.ClickedItem;
-
-            //this.Frame.Navigate(typeof(MainPage), selected);
+ 	        base.OnNavigatedFrom(e);
         }
 
-        private void Books_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //Debug.WriteLine("ItemClick" + ((Book)e.ClickedItem).Name);
-            var selected = (Book)e.ClickedItem;
+        //private void Books_Tapped(object sender, TappedRoutedEventArgs e)
+        //{
+        //    //Debug.WriteLine("Tapped");
+        //    //var selected = (Book)e.ClickedItem;
 
-            this.Frame.Navigate(typeof(MainPage), selected);
-        }
+        //    //this.Frame.Navigate(typeof(MainPage), selected);
+        //}
+
+        //private void Books_ItemClick(object sender, ItemClickEventArgs e)
+        //{
+        //    //Debug.WriteLine("ItemClick" + ((Book)e.ClickedItem).Name);
+        //    var selected = (Book)e.ClickedItem;
+
+        //    this.Frame.Navigate(typeof(MainPage), selected);
+        //}
 
         private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -76,6 +82,5 @@ namespace Novella
         }
 
         
-
     }
 }

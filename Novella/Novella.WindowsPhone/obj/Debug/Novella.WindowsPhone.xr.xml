@@ -30,9 +30,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Height" />
+      <RootProperty Name="MinHeight" />
     </RootType>
     <RootType FullName="CoverFlowControl.CoverFlow">
-      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="Tapped" />
       <RootEvent Name="ItemClick" />

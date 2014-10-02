@@ -18,7 +18,7 @@
                 </DataTemplate>
             </controls:CoverFlow.ItemTemplate>
         </controls:CoverFlow>
-        
+
         <!--ListView x:Name="Books" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Tapped="Books_Tapped" ItemClick="Books_ItemClick" IsItemClickEnabled="True" Margin="0,83,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -29,7 +29,7 @@
                     
                 </DataTemplate>
             </ListView.ItemTemplate-->
-        
+
     </Grid>
 </Page>
 

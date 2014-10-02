@@ -277,11 +277,11 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf">
-      <PackagePath>BooksList.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf">
+      <PackagePath>BooksList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\Themes\Generic.xbf">
       <PackagePath>CoverFlowControl\Themes\Generic.xbf</PackagePath>

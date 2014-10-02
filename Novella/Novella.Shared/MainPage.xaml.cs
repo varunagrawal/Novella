@@ -47,7 +47,10 @@ namespace Novella
 
             Dialogues.DataContext = dialogues;
 
-            //StateManager.RestoreScrollViewerOffset(Dialogues);
+            Dialogues.UpdateLayout();
+
+            //Dialogues.ScrollIntoView(dialogues.LastOrDefault<Dialogue>());
+            
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
