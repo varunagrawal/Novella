@@ -77,3 +77,6 @@ D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\BooksList.g.cs
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\BooksList.xaml
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\BooksList.xbf
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\WinRTXamlToolkit.dll
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\WinRTXamlToolkit.pri
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\WinRTXamlToolkit.pri.xml

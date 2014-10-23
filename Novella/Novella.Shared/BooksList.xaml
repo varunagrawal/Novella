@@ -9,9 +9,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,27,0,562" />
+        <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
 
-        <controls:CoverFlow x:Name="CoverFlow" Height="400" Tapped="CoverFlow_Tapped" ItemClick="CoverFlow_ItemClick">
+        <controls:CoverFlow x:Name="CoverFlow" Tapped="CoverFlow_Tapped" Margin="0,167,0,56">
             <controls:CoverFlow.ItemTemplate>
                 <DataTemplate>
                     <Image Source="{Binding Cover}" Height="400" />

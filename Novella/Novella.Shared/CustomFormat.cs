@@ -16,6 +16,9 @@ namespace Novella
 
             try
             {
+                string previousName = "";
+                TextAlignment previousAlignment = TextAlignment.Right;
+
                 // Get the file.
                 StorageFolder folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
                 StorageFolder books = await folder.GetFolderAsync("Books");
@@ -23,9 +26,6 @@ namespace Novella
                 var file = await books.GetFileAsync(filename);
 
                 IList<string> lines = await Windows.Storage.FileIO.ReadLinesAsync(file);
-
-                string previousName = "";
-                TextAlignment previousAlignment = TextAlignment.Right;
 
                 foreach (string line in lines)
                 {
@@ -78,7 +78,7 @@ namespace Novella
 
                 return dialogues;
             }
-            catch (Exception ex)
+            catch (NullReferenceException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 return null;

@@ -11,7 +11,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
 
-        <controls:CoverFlow x:ConnectionId='1' x:Name="CoverFlow"                                                           Margin="0,167,0,56">
+        <controls:CoverFlow x:ConnectionId='1' x:Name="CoverFlow"                           Margin="0,167,0,56">
             <controls:CoverFlow.ItemTemplate>
                 <DataTemplate>
                     <Image Source="{Binding Cover}" Height="400" />

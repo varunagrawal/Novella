@@ -75,12 +75,13 @@ namespace Novella
             this.Frame.Navigate(typeof(MainPage), selected);
         }
 
+        /*
         private void CoverFlow_ItemClick(object sender, ItemClickEventArgs e)
         {
             var selected = CoverFlow.SelectedItem;
             this.Frame.Navigate(typeof(MainPage), selected);
         }
-
+        */
         
     }
 }

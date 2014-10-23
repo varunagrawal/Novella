@@ -77,3 +77,6 @@ D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\CoverFlowControl.dll
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\CoverFlowControl.pdb
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\CoverFlowControl.pri
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Debug\Novella.Windows.csproj.GenerateResource.Cache
+D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\WinRTXamlToolkit.dll
+D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\WinRTXamlToolkit.pri
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Debug\WinRTXamlToolkit.pri.xml

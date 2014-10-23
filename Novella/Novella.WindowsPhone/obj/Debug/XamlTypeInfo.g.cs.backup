@@ -149,30 +149,30 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[11];
-            _typeNameTable[0] = "CoverFlowControl.CoverFlow";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[2] = "Int32";
-            _typeNameTable[3] = "Object";
-            _typeNameTable[4] = "Double";
-            _typeNameTable[5] = "Windows.UI.Xaml.Duration";
-            _typeNameTable[6] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[7] = "Novella.BooksList";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[9] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[10] = "Novella.MainPage";
+            _typeNameTable[0] = "Novella.MainPage";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "CoverFlowControl.CoverFlow";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[5] = "Int32";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "Double";
+            _typeNameTable[8] = "Windows.UI.Xaml.Duration";
+            _typeNameTable[9] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[10] = "Novella.BooksList";
 
             _typeTable = new global::System.Type[11];
-            _typeTable[0] = typeof(global::CoverFlowControl.CoverFlow);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[2] = typeof(global::System.Int32);
-            _typeTable[3] = typeof(global::System.Object);
-            _typeTable[4] = typeof(global::System.Double);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Duration);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[7] = typeof(global::Novella.BooksList);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[10] = typeof(global::Novella.MainPage);
+            _typeTable[0] = typeof(global::Novella.MainPage);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::CoverFlowControl.CoverFlow);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[5] = typeof(global::System.Int32);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::System.Double);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Duration);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[10] = typeof(global::Novella.BooksList);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -207,9 +207,9 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_CoverFlow() { return new global::CoverFlowControl.CoverFlow(); }
-        private object Activate_7_BooksList() { return new global::Novella.BooksList(); }
-        private object Activate_10_MainPage() { return new global::Novella.MainPage(); }
+        private object Activate_0_MainPage() { return new global::Novella.MainPage(); }
+        private object Activate_3_CoverFlow() { return new global::CoverFlowControl.CoverFlow(); }
+        private object Activate_10_BooksList() { return new global::Novella.BooksList(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -221,9 +221,24 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  CoverFlowControl.CoverFlow
+            case 0:   //  Novella.MainPage
+                userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_0_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  CoverFlowControl.CoverFlow
                 userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_0_CoverFlow;
+                userType.Activator = Activate_3_CoverFlow;
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("SelectedItem");
                 userType.AddMemberName("SpaceBetweenItems");
@@ -237,48 +252,33 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 4:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Int32
+            case 5:   //  Int32
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Object
+            case 6:   //  Object
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Double
+            case 7:   //  Double
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Duration
+            case 8:   //  Windows.UI.Xaml.Duration
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            case 9:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
                 xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Novella.BooksList
+            case 10:   //  Novella.BooksList
                 userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_BooksList;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  Novella.MainPage
-                userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MainPage;
+                userType.Activator = Activate_10_BooksList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -296,6 +296,8 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
                     _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::CoverFlowControl.CoverFlowControl_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                    provider = new global::WinRTXamlToolkit.WinRTXamlToolkit_WindowsPhone_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;
