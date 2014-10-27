@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Novella.Utility;
 using System.Collections.ObjectModel;
+using Windows.UI.Input;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,6 +27,8 @@ namespace Novella
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Book b;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -42,14 +45,21 @@ namespace Novella
         {
             base.OnNavigatedTo(e);
 
-            Book b = e.Parameter as Book;
+            b = e.Parameter as Book;
             ObservableCollection<Dialogue> dialogues = await Classic.Load(b.FileName);
 
             Dialogues.DataContext = dialogues;
 
             Dialogues.UpdateLayout();
 
-            //Dialogues.ScrollIntoView(dialogues.LastOrDefault<Dialogue>());
+            string bookmark = Classic.GetBookmark(b.FileName);
+            if (!string.IsNullOrEmpty(bookmark))
+            {
+                Dialogue d = dialogues.Where(x => x.Line == bookmark).SingleOrDefault();
+
+                if (d != null)
+                    Dialogues.ScrollIntoView(d);
+            }
             
         }
 
@@ -65,6 +75,36 @@ namespace Novella
             this.Frame.GoBack();
         }
 
+        private void Bookmark_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem element = sender as MenuFlyoutItem;
+            if (element == null) return;
+
+            Dialogue d = element.DataContext as Dialogue;
+
+            Classic.AddBookmark(b.FileName, d);
+        }
+
+        private void Dialogue_Holding(object sender, HoldingRoutedEventArgs args)
+        {
+            // this event is fired multiple times. We do not want to show the menu twice
+            if (args.HoldingState != HoldingState.Started) return;
+
+            FrameworkElement element = sender as FrameworkElement;
+            if (element == null) return;
+
+            // If the menu was attached properly, we just need to call this handy method
+            FlyoutBase.ShowAttachedFlyout(element);
+        }
+
+        private void StackPanel_RightTapped(object sender, RightTappedRoutedEventArgs args)
+        {
+            FrameworkElement element = sender as FrameworkElement;
+            if (element == null) return;
+
+            // If the menu was attached properly, we just need to call this handy method
+            FlyoutBase.ShowAttachedFlyout(element);
+        }
         
     }
 }

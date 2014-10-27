@@ -63,5 +63,20 @@ namespace Novella
             return dialogues;
         }
 
+        public static void AddBookmark(string book, Dialogue d)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+            localSettings.Values[book] = d.Line;
+
+        }
+
+        public static string GetBookmark(string book)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (localSettings.Values.ContainsKey(book))
+                return (string)localSettings.Values[book];
+            else return null;
+        }
     }
 }

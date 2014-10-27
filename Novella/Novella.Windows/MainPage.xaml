@@ -17,14 +17,22 @@
     
     <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,50,12,0" >
         <!--TextBlock x:Name="txtLoading" Text="Loading..." /-->
-        <ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" >
+        <ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Margin="0,0,0,93" >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0" Background="DarkGreen">
+
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0" Background="{Binding BgColor}" Holding="Dialogue_Holding" RightTapped="StackPanel_RightTapped">
                         <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="Auto" FontSize="15" TextAlignment="{Binding Alignment}" FontWeight="Light" Margin="5,10,5,0" />
                         <TextBlock Text="{Binding Line}" TextWrapping="WrapWholeWords" MinHeight="30" FontSize="20" TextAlignment="{Binding Alignment}" Margin="10,0,10,5" />
+
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Name="Bookmark"  Text="Bookmark" Click="Bookmark_Click" />
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
                     </StackPanel>
+                    
+
                     <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
                         --><!--Image Source="{Binding Picture}" Height="50" Width="50" /--><!--
                         

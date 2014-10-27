@@ -21,10 +21,17 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
 
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0" Background="{Binding BgColor}">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0" Background="{Binding BgColor}" Holding="Dialogue_Holding" >
                         <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="Auto" FontSize="15" TextAlignment="{Binding Alignment}" FontWeight="Light" Margin="5,10,5,0" />
                         <TextBlock Text="{Binding Line}" TextWrapping="WrapWholeWords" MinHeight="30" FontSize="20" TextAlignment="{Binding Alignment}" Margin="10,0,10,5" />
+
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Name="Bookmark"  Text="Bookmark" Click="Bookmark_Click" />
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
                     </StackPanel>
+                    
                     <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
                         -->
                     <!--Image Source="{Binding Picture}" Height="50" Width="50" /-->
