@@ -81,7 +81,7 @@ namespace Novella
             catch (NullReferenceException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return null;
+                return new ObservableCollection<Dialogue>();
             }
         }
     }
