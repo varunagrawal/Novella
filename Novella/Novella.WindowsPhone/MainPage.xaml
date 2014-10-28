@@ -17,7 +17,7 @@
 
     <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,50,12,0" >
         <!--TextBlock x:Name="txtLoading" Text="Loading..." /-->
-        <ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" >
+        <ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Margin="0,0,0,26" >
             <ListView.ItemTemplate>
                 <DataTemplate>
 
