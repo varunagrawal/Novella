@@ -26,11 +26,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\Novella.Windows.exe">
       <PackagePath>Novella.Windows.exe</PackagePath>
-      <Modified>2014-10-30T18:46:50.358</Modified>
+      <Modified>2014-10-30T20:13:28.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.dll">
       <PackagePath>CoverFlowControl.dll</PackagePath>
-      <Modified>2014-10-22T16:41:30.590</Modified>
+      <Modified>2014-10-30T20:13:22.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.Windows.1.7.3.0\lib\netcore451\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>

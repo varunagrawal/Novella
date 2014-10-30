@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -27,6 +28,20 @@ namespace Novella
     {
         ObservableCollection<Book> books;
 
+		private int CurrentBookIndex
+		{
+			get 
+			{
+				if(ApplicationData.Current.RoamingSettings.Values.ContainsKey("currentbookindex"))
+					return (int)ApplicationData.Current.RoamingSettings.Values["currentbookindex"];
+				else return 0;
+			}
+			set
+			{
+				ApplicationData.Current.RoamingSettings.Values["currentbookindex"] = value;
+			}
+		}
+
         public BooksList()
         {
             this.InitializeComponent();
@@ -38,31 +53,23 @@ namespace Novella
 
             books = await BookModel.GetBooksList();
 
-            //Books.ItemsSource = books;
-            CoverFlow.ItemsSource = books;
+			CoverFlow.SpaceBetweenItems = 60.0;
+			CoverFlow.ItemsSource = books;
+
+			CoverFlow.LayoutUpdated += CoverFlow_LayoutUpdated;
 
         }
+
+		void CoverFlow_LayoutUpdated(object sender, object e)
+		{
+			CoverFlow.SelectedIndex = CurrentBookIndex;
+		}
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
  	        base.OnNavigatedFrom(e);
         }
 
-        //private void Books_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    //Debug.WriteLine("Tapped");
-        //    //var selected = (Book)e.ClickedItem;
-
-        //    //this.Frame.Navigate(typeof(MainPage), selected);
-        //}
-
-        //private void Books_ItemClick(object sender, ItemClickEventArgs e)
-        //{
-        //    //Debug.WriteLine("ItemClick" + ((Book)e.ClickedItem).Name);
-        //    var selected = (Book)e.ClickedItem;
-
-        //    this.Frame.Navigate(typeof(MainPage), selected);
-        //}
 
         private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -72,6 +79,9 @@ namespace Novella
         private void CoverFlow_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var selected = CoverFlow.SelectedItem;
+
+			CurrentBookIndex = CoverFlow.SelectedIndex;
+
             this.Frame.Navigate(typeof(MainPage), selected);
         }
 

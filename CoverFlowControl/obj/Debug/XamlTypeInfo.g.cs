@@ -826,3 +826,7 @@ namespace CoverFlowControl.CoverFlowControl_XamlTypeInfo
 
 
 
+
+
+
+

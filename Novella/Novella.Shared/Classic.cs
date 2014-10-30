@@ -13,11 +13,6 @@ namespace Novella
 {
     public class Classic
     {
-        public static void LoadBooks()
-        { 
-            
-        }
-
         public static async Task<ObservableCollection<Dialogue>> Load(string file)
         {
             ObservableCollection<Dialogue> dialogues = await DialogueModel.GetDialoguesFromFile(file);
@@ -39,13 +34,6 @@ namespace Novella
             List<string> Characters = new List<string>();
 
             Characters = dialogues.Where(x => x.LineType == Constants.LineType.Dialogue).Select(x => x.Name).Distinct().ToList();
-            //foreach (Dialogue d in dialogues)
-            //{
-            //    if (!Characters.Contains(d.Name))
-            //    {
-            //        Characters.Add(d.Name);
-            //    }
-            //}
 
             Color color = new Color();
             color.R = 0;
@@ -65,17 +53,17 @@ namespace Novella
 
         public static void AddBookmark(string book, Dialogue d)
         {
-            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+			var roamingSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
 
-            localSettings.Values[book] = d.Line;
+			roamingSettings.Values[book] = d.Line;
 
         }
 
         public static string GetBookmark(string book)
         {
-            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (localSettings.Values.ContainsKey(book))
-                return (string)localSettings.Values[book];
+            var roamingSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
+            if (roamingSettings.Values.ContainsKey(book))
+                return (string)roamingSettings.Values[book];
             else return null;
         }
     }
