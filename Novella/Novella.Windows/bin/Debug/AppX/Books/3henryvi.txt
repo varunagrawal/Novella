@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. London. The Parliament-house.
 Notice#Alarum. Enter YORK, EDWARD, RICHARD, NORFOLK, MONTAGUE, WARWICK, and Soldiers
 Dialogue#WARWICK=I wonder how the king escaped our hands.

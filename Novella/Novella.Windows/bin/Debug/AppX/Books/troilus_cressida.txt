@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#PROLOGUE
 Dialogue#PROSPERO=In Troy, there lies the scene. From isles of Greece
 Dialogue#PROSPERO=The princes orgulous, their high blood chafed,

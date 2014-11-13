@@ -28,6 +28,7 @@
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout>
                                 <MenuFlyoutItem x:ConnectionId='2' Name="Bookmark"  Text="Bookmark"                        />
+								<MenuFlyoutItem x:ConnectionId='3' Name="Share" Text="Share"                     />
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </StackPanel>
@@ -46,8 +47,8 @@
     </Grid>
     
     <Page.BottomAppBar>
-        <CommandBar IsOpen="True" IsSticky="True">
-            <AppBarButton x:ConnectionId='3' Name="BackButton" Label="Back" Icon="Back"                          />
+		<CommandBar IsOpen="True" IsSticky="True">
+			<AppBarButton x:ConnectionId='4' Name="BackButton" Label="Back" Icon="Back"                          />
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

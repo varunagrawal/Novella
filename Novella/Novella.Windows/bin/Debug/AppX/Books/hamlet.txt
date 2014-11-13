@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Elsinore. A platform before the castle.
 Notice#FRANCISCO at his post. Enter to him BERNARDO
 Dialogue#BERNARDO=Who's there?

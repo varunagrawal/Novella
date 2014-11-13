@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#PROLOGUE
 Notice#Enter Chorus
 Dialogue#Chorus=O for a Muse of fire, that would ascend

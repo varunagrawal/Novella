@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Athens. The palace of THESEUS.
 Notice#Enter THESEUS, HIPPOLYTA, PHILOSTRATE, and Attendants
 Dialogue#THESEUS=Now, fair Hippolyta, our nuptial hour

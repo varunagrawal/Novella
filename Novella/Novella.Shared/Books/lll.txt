@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. The king of Navarre's park.
 Notice#Enter FERDINAND king of Navarre, BIRON, LONGAVILLE and DUMAIN
 Dialogue#FERDINAND=Let fame, that all hunt after in their lives,

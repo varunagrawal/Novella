@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Westminster Abbey.
 Notice# c
 Dialogue#BEDFORD=Hung be the heavens with black, yield day to night!

@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Britain. The garden of Cymbeline's palace.
 Notice#Enter two Gentlemen
 Dialogue#First Gentleman=You do not meet a man but frowns: our bloods

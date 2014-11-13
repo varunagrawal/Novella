@@ -325,6 +325,9 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf">
       <PackagePath>BooksList.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\About.xbf">
+      <PackagePath>About.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

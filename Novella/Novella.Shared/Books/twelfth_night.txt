@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. DUKE ORSINO's palace.
 Notice#Enter DUKE ORSINO, CURIO, and other Lords; Musicians attending
 Dialogue#DUKE ORSINO=If music be the food of love, play on;

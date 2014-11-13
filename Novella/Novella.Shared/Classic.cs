@@ -15,11 +15,19 @@ namespace Novella
     {
         public static async Task<ObservableCollection<Dialogue>> Load(string file)
         {
-            ObservableCollection<Dialogue> dialogues = await DialogueModel.GetDialoguesFromFile(file);
+			try
+			{
+				ObservableCollection<Dialogue> dialogues = await DialogueModel.GetDialoguesFromFile(file);
 
-            dialogues = AssignColorsToSpeakers(dialogues);
+				dialogues = AssignColorsToSpeakers(dialogues);
 
-            return dialogues;
+				return dialogues;
+			}
+			catch(Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine("Load error: " + ex.Message);
+				return null;
+			}
         }
 
         public static ObservableCollection<Dialogue> LoadXml(string file)
@@ -37,7 +45,7 @@ namespace Novella
 
             Color color = new Color();
             color.R = 0;
-            color.G = 60;
+            color.G = 40;
             color.B = 0;
 
             foreach (string speaker in Characters)
@@ -45,7 +53,7 @@ namespace Novella
                 foreach (var t in dialogues.Where(x => x.Name == speaker))
                     t.BgColor = "#" + color.ToString().Substring(3);
 
-                color.G += 20;
+                color.G += 10;
             }
 
             return dialogues;

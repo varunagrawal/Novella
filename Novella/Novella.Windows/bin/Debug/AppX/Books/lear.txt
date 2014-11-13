@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. King Lear's palace.
 Notice#Enter KENT, GLOUCESTER, and EDMUND
 Dialogue#KENT=I thought the king had more affected the Duke of

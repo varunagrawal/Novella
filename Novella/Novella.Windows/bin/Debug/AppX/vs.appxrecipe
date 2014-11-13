@@ -26,11 +26,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\Novella.Windows.exe">
       <PackagePath>Novella.Windows.exe</PackagePath>
-      <Modified>2014-10-30T20:13:28.742</Modified>
+      <Modified>2014-10-31T10:28:01.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.dll">
       <PackagePath>CoverFlowControl.dll</PackagePath>
-      <Modified>2014-10-30T20:13:22.884</Modified>
+      <Modified>2014-10-30T20:15:46.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.Windows.1.7.3.0\lib\netcore451\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
@@ -289,151 +289,151 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\1henryiv.txt">
       <PackagePath>Books\1henryiv.txt</PackagePath>
-      <Modified>2014-09-21T10:14:20.679</Modified>
+      <Modified>2014-10-31T10:05:52.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\1henryvi.txt">
       <PackagePath>Books\1henryvi.txt</PackagePath>
-      <Modified>2014-09-21T10:14:29.965</Modified>
+      <Modified>2014-10-31T10:06:04.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\2henryiv.txt">
       <PackagePath>Books\2henryiv.txt</PackagePath>
-      <Modified>2014-09-21T10:14:24.568</Modified>
+      <Modified>2014-10-31T10:05:55.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\2henryvi.txt">
       <PackagePath>Books\2henryvi.txt</PackagePath>
-      <Modified>2014-09-21T10:14:32.745</Modified>
+      <Modified>2014-10-31T10:06:11.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\3henryvi.txt">
       <PackagePath>Books\3henryvi.txt</PackagePath>
-      <Modified>2014-09-21T10:14:35.464</Modified>
+      <Modified>2014-10-31T10:06:21.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\allswell.txt">
       <PackagePath>Books\allswell.txt</PackagePath>
-      <Modified>2014-09-21T10:13:34.619</Modified>
+      <Modified>2014-10-31T10:04:34.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\asyoulikeit.txt">
       <PackagePath>Books\asyoulikeit.txt</PackagePath>
-      <Modified>2014-09-21T10:13:37.311</Modified>
+      <Modified>2014-10-31T10:04:38.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\cleopatra.txt">
       <PackagePath>Books\cleopatra.txt</PackagePath>
-      <Modified>2014-09-21T10:14:49.429</Modified>
+      <Modified>2014-10-31T10:06:53.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\comedy_errors.txt">
       <PackagePath>Books\comedy_errors.txt</PackagePath>
-      <Modified>2014-09-21T10:13:39.748</Modified>
+      <Modified>2014-10-31T10:04:41.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\coriolanus.txt">
       <PackagePath>Books\coriolanus.txt</PackagePath>
-      <Modified>2014-09-21T10:14:52.484</Modified>
+      <Modified>2014-10-31T10:07:00.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\cymbeline.txt">
       <PackagePath>Books\cymbeline.txt</PackagePath>
-      <Modified>2014-09-21T10:13:42.831</Modified>
+      <Modified>2014-10-31T10:04:46.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\hamlet.txt">
       <PackagePath>Books\hamlet.txt</PackagePath>
-      <Modified>2014-09-21T10:14:55.761</Modified>
+      <Modified>2014-10-31T10:07:07.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\henryv.txt">
       <PackagePath>Books\henryv.txt</PackagePath>
-      <Modified>2014-09-21T10:14:27.239</Modified>
+      <Modified>2014-10-31T10:06:00.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\henryviii.txt">
       <PackagePath>Books\henryviii.txt</PackagePath>
-      <Modified>2014-09-21T10:14:38.300</Modified>
+      <Modified>2014-10-31T10:06:28.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\john.txt">
       <PackagePath>Books\john.txt</PackagePath>
-      <Modified>2014-09-21T10:14:40.669</Modified>
+      <Modified>2014-10-31T10:06:33.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\julius_caesar.txt">
       <PackagePath>Books\julius_caesar.txt</PackagePath>
-      <Modified>2014-09-21T10:14:58.521</Modified>
+      <Modified>2014-10-31T10:07:12.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\lear.txt">
       <PackagePath>Books\lear.txt</PackagePath>
-      <Modified>2014-09-21T10:15:01.617</Modified>
+      <Modified>2014-10-31T10:07:17.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\lll.txt">
       <PackagePath>Books\lll.txt</PackagePath>
-      <Modified>2014-09-21T10:13:45.736</Modified>
+      <Modified>2014-10-31T10:04:51.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\macbeth.txt">
       <PackagePath>Books\macbeth.txt</PackagePath>
-      <Modified>2014-09-21T10:15:03.991</Modified>
+      <Modified>2014-10-31T10:07:24.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\measure.txt">
       <PackagePath>Books\measure.txt</PackagePath>
-      <Modified>2014-09-21T10:13:48.308</Modified>
+      <Modified>2014-10-31T10:04:55.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\merchant.txt">
       <PackagePath>Books\merchant.txt</PackagePath>
-      <Modified>2014-09-21T10:13:53.619</Modified>
+      <Modified>2014-10-31T10:05:04.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\merry_wives.txt">
       <PackagePath>Books\merry_wives.txt</PackagePath>
-      <Modified>2014-09-21T10:13:51.140</Modified>
+      <Modified>2014-10-31T10:05:00.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\midsummer.txt">
       <PackagePath>Books\midsummer.txt</PackagePath>
-      <Modified>2014-09-21T10:13:55.790</Modified>
+      <Modified>2014-10-31T10:05:07.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\much_ado.txt">
       <PackagePath>Books\much_ado.txt</PackagePath>
-      <Modified>2014-09-21T10:13:58.583</Modified>
+      <Modified>2014-10-31T10:05:11.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\Othello.txt">
       <PackagePath>Books\Othello.txt</PackagePath>
-      <Modified>2014-09-21T10:15:06.971</Modified>
+      <Modified>2014-10-31T10:07:30.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\pericles.txt">
       <PackagePath>Books\pericles.txt</PackagePath>
-      <Modified>2014-09-21T10:14:01.525</Modified>
+      <Modified>2014-10-31T10:05:18.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\richardii.txt">
       <PackagePath>Books\richardii.txt</PackagePath>
-      <Modified>2014-09-21T10:14:43.171</Modified>
+      <Modified>2014-10-31T10:06:39.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\richardiii.txt">
       <PackagePath>Books\richardiii.txt</PackagePath>
-      <Modified>2014-09-21T10:14:46.093</Modified>
+      <Modified>2014-10-31T10:06:47.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\romeo_juliet.txt">
       <PackagePath>Books\romeo_juliet.txt</PackagePath>
-      <Modified>2014-09-21T10:15:09.914</Modified>
+      <Modified>2014-10-31T10:07:35.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\taming_shrew.txt">
       <PackagePath>Books\taming_shrew.txt</PackagePath>
-      <Modified>2014-09-21T10:14:03.844</Modified>
+      <Modified>2014-10-31T10:05:23.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\tempest.txt">
       <PackagePath>Books\tempest.txt</PackagePath>
-      <Modified>2014-09-21T10:14:06.095</Modified>
+      <Modified>2014-10-31T10:05:28.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\timon.txt">
       <PackagePath>Books\timon.txt</PackagePath>
-      <Modified>2014-09-21T10:15:13.615</Modified>
+      <Modified>2014-10-31T10:07:38.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\titus.txt">
       <PackagePath>Books\titus.txt</PackagePath>
-      <Modified>2014-09-21T10:15:16.342</Modified>
+      <Modified>2014-10-31T10:07:43.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\troilus_cressida.txt">
       <PackagePath>Books\troilus_cressida.txt</PackagePath>
-      <Modified>2014-09-21T10:14:09.695</Modified>
+      <Modified>2014-10-31T10:05:34.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\twelfth_night.txt">
       <PackagePath>Books\twelfth_night.txt</PackagePath>
-      <Modified>2014-09-21T10:14:12.660</Modified>
+      <Modified>2014-10-31T10:05:38.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\two_gentlemen.txt">
       <PackagePath>Books\two_gentlemen.txt</PackagePath>
-      <Modified>2014-09-21T10:14:15.146</Modified>
+      <Modified>2014-10-31T10:05:43.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Shared\Books\winters_tale.txt">
       <PackagePath>Books\winters_tale.txt</PackagePath>
-      <Modified>2014-09-21T10:14:17.934</Modified>
+      <Modified>2014-10-31T10:05:47.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

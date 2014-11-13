@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. KING JOHN'S palace.
 Notice#Enter KING JOHN, QUEEN ELINOR, PEMBROKE, ESSEX, SALISBURY, and others, with CHATILLON
 Dialogue#KING JOHN=Now, say, Chatillon, what would France with us?

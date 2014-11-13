@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Verona. An open place.
 Notice#Enter VALENTINE and PROTEUS
 Dialogue#VALENTINE=Cease to persuade, my loving Proteus:

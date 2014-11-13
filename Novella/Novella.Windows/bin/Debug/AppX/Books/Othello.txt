@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Venice. A street.
 Notice#Enter RODERIGO and IAGO
 Dialogue#RODERIGO=Tush! never tell me; I take it much unkindly

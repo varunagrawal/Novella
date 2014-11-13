@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Windsor. Before PAGE's house.
 Notice#Enter SHALLOW, SLENDER, and SIR HUGH EVANS
 Dialogue#SHALLOW=Sir Hugh, persuade me not; I will make a Star-

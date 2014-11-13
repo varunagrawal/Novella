@@ -1,3 +1,4 @@
+Banner#SCENE I. Before an alehouse on a heath.
 Notice#Enter Hostess and SLY
 Dialogue#SLY=I'll pheeze you, in faith.
 Dialogue#Hostess=A pair of stocks, you rogue!

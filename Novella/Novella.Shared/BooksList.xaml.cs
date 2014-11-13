@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Storage;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -51,24 +52,39 @@ namespace Novella
         {
             base.OnNavigatedTo(e);
 
-            books = await BookModel.GetBooksList();
+			try
+			{
+				books = await BookModel.GetBooksList();
+			}
+			catch(Exception)
+			{
+				books = null;
+			}
+            
+			if (books == null)
+			{
+				MessageDialog md = new MessageDialog("Oops. Error getting the books. Please restart the app.");
+				await md.ShowAsync();
+			}
+			else 
+			{
+				CoverFlow.SpaceBetweenItems = 60.0;
+				CoverFlow.ItemsSource = books;
 
-			CoverFlow.SpaceBetweenItems = 60.0;
-			CoverFlow.ItemsSource = books;
-
-			CoverFlow.LayoutUpdated += CoverFlow_LayoutUpdated;
+				CoverFlow.LayoutUpdated += CoverFlow_LayoutUpdated;
+			}
 
         }
+
+		protected override void OnNavigatedFrom(NavigationEventArgs e)
+		{
+ 			base.OnNavigatedFrom(e);
+		}
 
 		void CoverFlow_LayoutUpdated(object sender, object e)
 		{
 			CoverFlow.SelectedIndex = CurrentBookIndex;
 		}
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
- 	        base.OnNavigatedFrom(e);
-        }
 
 
         private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -79,19 +95,18 @@ namespace Novella
         private void CoverFlow_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var selected = CoverFlow.SelectedItem;
-
 			CurrentBookIndex = CoverFlow.SelectedIndex;
 
-            this.Frame.Navigate(typeof(MainPage), selected);
+            this.Frame.Navigate(typeof(Novella.MainPage), selected);
         }
 
-        /*
+        
         private void CoverFlow_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var selected = CoverFlow.SelectedItem;
-            this.Frame.Navigate(typeof(MainPage), selected);
+            //var selected = CoverFlow.SelectedItem;
+            //this.Frame.Navigate(typeof(MainPage), selected);
         }
-        */
+        
         
     }
 }

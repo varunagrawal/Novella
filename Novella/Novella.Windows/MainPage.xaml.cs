@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Navigation;
 using Novella.Utility;
 using System.Collections.ObjectModel;
 using Windows.UI.Input;
+using Windows.UI.Popups;
+using Windows.ApplicationModel.DataTransfer;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -47,6 +49,14 @@ namespace Novella
 
             b = e.Parameter as Book;
             ObservableCollection<Dialogue> dialogues = await Classic.Load(b.FileName);
+			
+			if(dialogues == null)
+			{
+				MessageDialog md = new MessageDialog("Error loading book.");
+				await md.ShowAsync();
+
+				return;
+			}
 
             Dialogues.DataContext = dialogues;
 
@@ -105,6 +115,25 @@ namespace Novella
             // If the menu was attached properly, we just need to call this handy method
             FlyoutBase.ShowAttachedFlyout(element);
         }
+
+		private void Share_Click(object sender, RoutedEventArgs e)
+		{
+			MenuFlyoutItem element = sender as MenuFlyoutItem;
+			if (element == null) return;
+			Dialogue d = element.DataContext as Dialogue;
+
+			DataTransferManager dtm = DataTransferManager.GetForCurrentView();
+			dtm.DataRequested += (s, requestArgs) =>
+			{
+				DataRequest dr = requestArgs.Request;
+
+				dr.Data.Properties.Title = "Novella";
+				dr.Data.Properties.Description = b.Name;
+				dr.Data.SetText(d.Line);
+			};
+
+			DataTransferManager.ShowShareUI();
+		}
         
     }
 }

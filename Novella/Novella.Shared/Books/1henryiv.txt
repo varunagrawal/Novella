@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. London. The palace.
 Notice#Enter KING HENRY, LORD JOHN OF LANCASTER, the EARL of WESTMORELAND, SIR WALTER BLUNT, and others
 Dialogue#KING HENRY IV=So shaken as we are, so wan with care,

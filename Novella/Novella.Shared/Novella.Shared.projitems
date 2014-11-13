@@ -67,43 +67,117 @@
     <Content Include="$(MSBuildThisFileDirectory)BookCovers\two_gentlemen.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)BookCovers\winters_tale.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)BooksList.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\1henryiv.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\1henryvi.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\2henryiv.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\2henryvi.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\3henryvi.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\allswell.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\asyoulikeit.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\cleopatra.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\comedy_errors.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\coriolanus.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\cymbeline.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\hamlet.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\henryv.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\henryviii.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\john.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\julius_caesar.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\lear.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\lll.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\macbeth.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\measure.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\merchant.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\merry_wives.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\midsummer.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\much_ado.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\Othello.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\pericles.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\richardii.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\richardiii.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\romeo_juliet.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\taming_shrew.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\tempest.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\timon.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\titus.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\troilus_cressida.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\twelfth_night.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\two_gentlemen.txt" />
-    <Content Include="$(MSBuildThisFileDirectory)Books\winters_tale.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Books\1henryiv.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\1henryvi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\2henryiv.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\2henryvi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\3henryvi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\allswell.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\asyoulikeit.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\cleopatra.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\comedy_errors.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\coriolanus.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\cymbeline.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\hamlet.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\henryv.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\henryviii.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\john.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\julius_caesar.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\lear.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\lll.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\macbeth.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\measure.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\merchant.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\merry_wives.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\midsummer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\much_ado.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\Othello.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\pericles.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\richardii.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\richardiii.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\romeo_juliet.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\taming_shrew.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\tempest.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\timon.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\titus.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\troilus_cressida.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\twelfth_night.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\two_gentlemen.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Books\winters_tale.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="$(MSBuildThisFileDirectory)Images\JuliusCaesar.png" />
   </ItemGroup>
   <ItemGroup>

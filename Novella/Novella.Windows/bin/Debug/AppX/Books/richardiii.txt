@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. London. A street.
 Notice#Enter GLOUCESTER, solus
 Dialogue#GLOUCESTER=Now is the winter of our discontent

@@ -13,44 +13,54 @@ namespace Novella
 
         public static async Task<ObservableCollection<Book>> GetBooksList()
         {
-            Books = await GetBooks();
+			try
+			{
+				Books = await GetBooks();
 
-            return Books;
+				return Books;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+            
         }
 
         public static async Task<ObservableCollection<Book>> GetBooks()
         {
             ObservableCollection<Book> books = new ObservableCollection<Book>();
 
-            try
-            {
-                // Get the file.
-                StorageFolder booksFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-                //StorageFolder booksFolder = await folder.GetFolderAsync("Books");
+			try
+			{
+				// Get the file.
+				StorageFolder booksFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+				//StorageFolder booksFolder = await folder.GetFolderAsync("Books");
 
-                var file = await booksFolder.GetFileAsync("BooksList.txt");
+				var file = await booksFolder.GetFileAsync("BooksList.txt");
 
-                IList<string> lines = await Windows.Storage.FileIO.ReadLinesAsync(file);
+				IList<string> lines = await Windows.Storage.FileIO.ReadLinesAsync(file);
 
-                foreach (var l in lines)
-                {
-                    Book book = new Book();
+				foreach (var l in lines)
+				{
+					Book book = new Book();
 
-                    var details = l.Split(':');
+					var details = l.Split(':');
 
-                    book.Name = details[0];
-                    book.FileName = details[1];
-                    book.Cover = @"/BookCovers/" + details[2];
+					book.Name = details[0];
+					book.FileName = details[1];
+					book.Cover = @"/BookCovers/" + details[2];
 
-                    books.Add(book);
-                }
+					books.Add(book);
+				}
 
-                return books;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+				return books;
+			}
+			catch (Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine(ex.Message);
+				throw ex;
+			}
+			
         }
 
     }

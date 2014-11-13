@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Alexandria. A room in CLEOPATRA's palace.
 Notice#Enter DEMETRIUS and PHILO
 Dialogue#PHILO=Nay, but this dotage of our general's

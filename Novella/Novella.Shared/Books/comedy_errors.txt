@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. A hall in DUKE SOLINUS'S palace.
 Notice#Enter DUKE SOLINUS, AEGEON, Gaoler, Officers, and other Attendants
 Dialogue#AEGEON=Proceed, Solinus, to procure my fall

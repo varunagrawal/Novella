@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Venice. A street.
 Notice#Enter ANTONIO, SALARINO, and SALANIO
 Dialogue#ANTONIO=In sooth, I know not why I am so sad:

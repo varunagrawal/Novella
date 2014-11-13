@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. An apartment in the DUKE'S palace.
 Notice#Enter DUKE VINCENTIO, ESCALUS, Lords and Attendants
 Dialogue#DUKE VINCENTIO=Escalus.

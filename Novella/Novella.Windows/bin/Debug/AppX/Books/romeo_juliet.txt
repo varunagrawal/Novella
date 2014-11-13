@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#PROLOGUE
 Dialogue#LODOVICO=Two households, both alike in dignity,
 Dialogue#LODOVICO=In fair Verona, where we lay our scene,

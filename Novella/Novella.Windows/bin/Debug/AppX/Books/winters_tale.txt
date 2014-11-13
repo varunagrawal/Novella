@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Antechamber in LEONTES' palace.
 Notice#Enter CAMILLO and ARCHIDAMUS
 Dialogue#ARCHIDAMUS=If you shall chance, Camillo, to visit Bohemia, on

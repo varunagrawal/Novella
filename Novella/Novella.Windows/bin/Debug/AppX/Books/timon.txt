@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Athens. A hall in Timon's house.
 Notice#Enter Poet, Painter, Jeweller, Merchant, and others, at several doors
 Dialogue#Poet=Good day, sir.

@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#PROLOGUE
 Dialogue#KING EDWARD IV=I come no more to make you laugh: things now,
 Dialogue#KING EDWARD IV=That bear a weighty and a serious brow,

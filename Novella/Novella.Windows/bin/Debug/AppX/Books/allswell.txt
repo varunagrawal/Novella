@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Rousillon. The COUNT's palace.
 Notice#Enter BERTRAM, the COUNTESS of Rousillon, HELENA, and LAFEU, all in black
 Dialogue#COUNTESS=In delivering my son from me, I bury a second husband.

@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. London. KING RICHARD II's palace.
 Notice#Enter KING RICHARD II, JOHN OF GAUNT, with other Nobles and Attendants
 Dialogue#KING RICHARD II=Old John of Gaunt, time-honour'd Lancaster,

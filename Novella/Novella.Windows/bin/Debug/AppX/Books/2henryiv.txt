@@ -1,3 +1,4 @@
+Banner#None
 Notice#Warkworth. Before the castle
 Notice#Enter RUMOUR, painted full of tongues
 Dialogue#RUMOUR=Open your ears; for which of you will stop

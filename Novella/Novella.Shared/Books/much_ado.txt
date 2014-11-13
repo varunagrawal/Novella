@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Before LEONATO'S house.
 Notice#Enter LEONATO, HERO, and BEATRICE, with a Messenger
 Dialogue#LEONATO=I learn in this letter that Don Peter of Arragon

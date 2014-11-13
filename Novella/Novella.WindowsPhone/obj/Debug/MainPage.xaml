@@ -28,22 +28,24 @@
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout>
                                 <MenuFlyoutItem x:ConnectionId='2' Name="Bookmark"  Text="Bookmark"                        />
+								<MenuFlyoutItem x:ConnectionId='3' Name="Share"  Text="Share"                     />
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </StackPanel>
                     
-                    <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                        -->
-                    <!--Image Source="{Binding Picture}" Height="50" Width="50" /-->
-                    <!--
-                        
-                    </StackPanel>-->
-
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
     </Grid>
 
+	<Page.BottomAppBar>
+		<CommandBar ClosedDisplayMode="Minimal">
+			<CommandBar.SecondaryCommands >
+				<AppBarButton x:ConnectionId='4' Name="About" Label="about"                     />
+			</CommandBar.SecondaryCommands>
+		</CommandBar>
+	</Page.BottomAppBar>
+	
 </Page>
 

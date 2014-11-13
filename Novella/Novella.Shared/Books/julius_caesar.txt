@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. Rome. A street.
 Notice#Enter FLAVIUS, MARULLUS, and certain Commoners
 Dialogue#FLAVIUS=Hence! home, you idle creatures get you home:

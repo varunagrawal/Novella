@@ -36,10 +36,17 @@ namespace Novella
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
+			this.UnhandledException += App_UnhandledException;
+		
             #if WINDOWS_PHONE_APP
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
             #endif
         }
+
+		void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+		{
+			System.Diagnostics.Debug.WriteLine(e.Message);
+		}
 
         #if WINDOWS_PHONE_APP
         void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)

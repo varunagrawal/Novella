@@ -1,3 +1,4 @@
+Banner#ACT I
 Banner#SCENE I. On a ship at sea: a tempestuous noise
 Dialogue#LUCENTIO=of thunder and lightning heard.
 Notice#Enter a Master and a Boatswain
