@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.Store;
+using Windows.UI.Popups;
 
 namespace Novella
 {
@@ -23,6 +25,46 @@ namespace Novella
     /// </summary>
     public sealed partial class App : Application
     {
+		private static bool _isTrial = CurrentApp.LicenseInformation.IsTrial;
+		public static bool IsTrial
+		{
+			get
+			{
+				return _isTrial;
+			}
+		}
+
+		/// <summary>
+		/// Check the current license information for this application
+		/// </summary>
+		private async void CheckLicense()
+		{
+			// When debugging, we want to simulate a trial mode experience. The following conditional allows us to set the _isTrial 
+			// property to simulate trial mode being on or off. 
+		#if DEBUG
+			string message = "Choose license mode.";
+
+			MessageDialog md = new MessageDialog(message);
+			md.Commands.Add(new UICommand("Active", new UICommandInvokedHandler(this.CommandInvokedHandler)));
+			md.Commands.Add(new UICommand("Trial", new UICommandInvokedHandler(this.CommandInvokedHandler)));
+
+			// Show the message dialog
+			await md.ShowAsync();
+
+		#else
+            _isTrial = _license.isTrial();
+		#endif
+		}
+
+		private void CommandInvokedHandler(IUICommand command)
+		{
+			if (command.Label == "Trial")
+				_isTrial = true;
+			else if (command.Label == "Active")
+				_isTrial = false;
+			
+		}
+
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
@@ -155,5 +197,6 @@ namespace Novella
             // TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
     }
 }

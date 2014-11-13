@@ -55,6 +55,12 @@ namespace Novella
 			try
 			{
 				books = await BookModel.GetBooksList();
+				
+				if(App.IsTrial)
+				{
+					List<string> trialBooks = new List<string>{"Hamlet", "Julius Caesar", "Othello", "Romeo and Juliet"};
+					books = new ObservableCollection<Book>(books.Where(x => trialBooks.Contains(x.Name)).ToList());
+				}
 			}
 			catch(Exception)
 			{
@@ -65,12 +71,14 @@ namespace Novella
 			{
 				MessageDialog md = new MessageDialog("Oops. Error getting the books. Please restart the app.");
 				await md.ShowAsync();
+
+				App.Current.Exit();
 			}
 			else 
 			{
 				CoverFlow.SpaceBetweenItems = 60.0;
 				CoverFlow.ItemsSource = books;
-
+				
 				CoverFlow.LayoutUpdated += CoverFlow_LayoutUpdated;
 			}
 
@@ -84,6 +92,7 @@ namespace Novella
 		void CoverFlow_LayoutUpdated(object sender, object e)
 		{
 			CoverFlow.SelectedIndex = CurrentBookIndex;
+			CoverFlow.LayoutUpdated -= CoverFlow_LayoutUpdated;
 		}
 
 
