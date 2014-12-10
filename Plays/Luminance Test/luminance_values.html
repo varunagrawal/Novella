@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Luminance Tests</title>
+    </head>
+    
+    <body>
+        http://jsfiddle.net/um1scyv0/
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+        <a href="http://jquery.com/">jQuery</a>
+        <!--script src="jquery.js"></script-->
+        <script>
+            
+        function componentToHex(c) {
+            var hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+            
+        $( document ).ready(function() {
+        
+            for(var r=0; r<100; r++){
+                for(var g=100; g<200; g++){
+                    for(var b=0; b<10; b++){
+                        $("#colors").append("<div style='background-color:" + rgbToHex(r, g, b) + ";'>Color</div>");
+                        //alert(rgbToHex(r, g, b));
+                    }
+                }
+            }
+            
+            //$('#colors').append("<div>Wassup?</div>");
+        });
+
+            
+        </script>
+        
+        <div id="colors" >
+            
+        </div>
+    </body>
+</html>
