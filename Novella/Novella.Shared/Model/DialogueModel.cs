@@ -63,8 +63,11 @@ namespace Novella
 				TextAlignment previousAlignment = TextAlignment.Right;
 
 				// Get the file.
-				StorageFolder books = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Books");
-				StorageFile file = await books.GetFileAsync(filename);
+				//StorageFolder books = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Books");
+				//StorageFile file = await books.GetFileAsync(filename);
+				
+				StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Books/" + filename));
+				
 				string text = await Windows.Storage.FileIO.ReadTextAsync(file);
 
 				char[] sep = new char[] { '\r', '\n' };

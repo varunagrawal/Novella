@@ -34,8 +34,6 @@ namespace Novella
 			{
 				// Get the file.
 				StorageFolder booksFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-				//StorageFolder booksFolder = await folder.GetFolderAsync("Books");
-
 				var file = await booksFolder.GetFileAsync("BooksList.txt");
 
 				IList<string> lines = await Windows.Storage.FileIO.ReadLinesAsync(file);

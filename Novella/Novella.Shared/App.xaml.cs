@@ -52,7 +52,7 @@ namespace Novella
 			await md.ShowAsync();
 
 		#else
-            _isTrial = _license.isTrial();
+			_isTrial = false;//_license.isTrial();
 		#endif
 		}
 

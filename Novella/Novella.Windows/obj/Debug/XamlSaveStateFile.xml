@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="d:\side projects\clappics\clappics\clappics\clappics.windows\obj\debug\intermediatexaml\clappics.windows.exe" HashGuid="f13a292f-415a-3dfd-a3b1-f3db37880a7b" />
-    <ReferenceAssembly PathName="d:\side projects\novella\coverflowcontrol\bin\debug\coverflowcontrol.dll" HashGuid="430587e1-a426-be76-c79f-d0885db329b8" />
+    <ReferenceAssembly PathName="d:\side projects\novella\coverflowcontrol\bin\debug\coverflowcontrol.dll" HashGuid="8e7680ed-d46a-75e8-ac9e-fcda6ab51eaa" />
     <ReferenceAssembly PathName="d:\side projects\novella\packages\winrtxamltoolkit.windows.1.7.3.0\lib\netcore451\winrtxamltoolkit.dll" HashGuid="3d00e4f0-a05f-fa7b-aa9a-437d99a557ad" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

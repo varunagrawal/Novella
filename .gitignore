@@ -6,3 +6,6 @@
 *.exe
 *.pdb
 *.pyc
+*.dll
+*.pdb
+*.exe
