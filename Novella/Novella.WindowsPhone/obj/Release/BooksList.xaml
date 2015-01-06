@@ -11,25 +11,22 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
 
-        <controls:CoverFlow x:ConnectionId='1' x:Name="CoverFlow"                           Margin="0,167,0,56">
-            <controls:CoverFlow.ItemTemplate>
-                <DataTemplate>
-                    <Image Source="{Binding Cover}" Height="400" />
-                </DataTemplate>
-            </controls:CoverFlow.ItemTemplate>
-        </controls:CoverFlow>
+		<!--<controls:CoverFlow x:Name="CoverFlow" Tapped="CoverFlow_Tapped" Margin="0,167,0,56">
+			<controls:CoverFlow.ItemTemplate>
+				<DataTemplate>
+					<Image Source="{Binding Cover}" Height="400" />
+				</DataTemplate>
+			</controls:CoverFlow.ItemTemplate>
+		</controls:CoverFlow>-->
 
-        <!--ListView x:Name="Books" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Tapped="Books_Tapped" ItemClick="Books_ItemClick" IsItemClickEnabled="True" Margin="0,83,0,0">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0">
-                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="40" FontSize="25" FontWeight="Bold" Margin="5,0,5,0" />
-                    </StackPanel>
-                    
-                </DataTemplate>
-            </ListView.ItemTemplate-->
-
+		<GridView x:ConnectionId='1' x:Name="Books"                       Margin="0,104,0,0" HorizontalAlignment="Center">
+			<GridView.ItemTemplate>
+				<DataTemplate>
+					<Image Source="{Binding Cover}" Height="150" Margin="10,10" />
+				</DataTemplate>
+			</GridView.ItemTemplate>
+		</GridView>
+        
     </Grid>
 </Page>
 

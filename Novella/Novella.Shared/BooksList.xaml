@@ -9,26 +9,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
+		<TextBlock Text="Novella" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
 
-        <controls:CoverFlow x:Name="CoverFlow" Tapped="CoverFlow_Tapped" Margin="0,167,0,56">
-            <controls:CoverFlow.ItemTemplate>
-                <DataTemplate>
-                    <Image Source="{Binding Cover}" Height="400" />
-                </DataTemplate>
-            </controls:CoverFlow.ItemTemplate>
-        </controls:CoverFlow>
-
-        <!--ListView x:Name="Books" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Tapped="Books_Tapped" ItemClick="Books_ItemClick" IsItemClickEnabled="True" Margin="0,83,0,0">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="10,10,10,0">
-                        <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Height="40" FontSize="25" FontWeight="Bold" Margin="5,0,5,0" />
-                    </StackPanel>
-                    
-                </DataTemplate>
-            </ListView.ItemTemplate-->
-
+		<ListView x:Name="Books" ItemsSource="{Binding}" 
+				  Tapped="Books_Tapped" 
+				  Margin="0,70,0,0" 
+				  HorizontalAlignment="Center"  
+				  VerticalAlignment="Center"
+				  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+			      ScrollViewer.VerticalScrollBarVisibility="Disabled"
+				  ScrollViewer.HorizontalScrollMode="Enabled"
+			      ScrollViewer.VerticalScrollMode="Disabled"
+				  ScrollViewer.ZoomMode="Disabled"
+				  SelectionMode="None">
+			<ListView.ItemsPanel>
+				<ItemsPanelTemplate>
+					<StackPanel Orientation="Horizontal" />
+				</ItemsPanelTemplate>
+			</ListView.ItemsPanel>
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<Image Source="{Binding Cover}" Height="350" Margin="12,10" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+        
     </Grid>
 </Page>

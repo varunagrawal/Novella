@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Novella.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novella"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<TextBlock FontSize="50" Text="Novella" TextAlignment="Center" Margin="0,0,0,573" />
+		<TextBlock FontSize="20" Text="Voyance Tech." TextAlignment="Center" Margin="0,67,10,666" />
+		
+		<Button Name="Contact" Content="Contact Us" Margin="612,256,0,474" Width="146" />
+		<Button Name="Rate" Content="Rate And Review" Margin="612,171,0,559" />
+	</Grid>
+</Page>
+

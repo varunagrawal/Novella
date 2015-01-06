@@ -47,18 +47,18 @@ namespace Novella
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+			ObservableCollection<Dialogue> dialogues = new ObservableCollection<Dialogue>();
 
-            b = e.Parameter as Book;
-            ObservableCollection<Dialogue> dialogues = await Classic.Load(b.FileName);
-
-			if (dialogues == null)
+			try
 			{
-				MessageDialog md = new MessageDialog("Error loading book.");
-				await md.ShowAsync();
+				b = e.Parameter as Book;
+				dialogues = await Classic.Load(b.FileName);
+			}
+			catch(Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine("Error loading book: " + ex.Message);
 
-				Dialogues.DataContext = new ObservableCollection<Dialogue>();
-
-				return;
+				this.Frame.GoBack();
 			}
 
             Dialogues.DataContext = dialogues;

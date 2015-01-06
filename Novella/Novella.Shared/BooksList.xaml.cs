@@ -27,7 +27,7 @@ namespace Novella
     /// </summary>
     public sealed partial class BooksList : Page
     {
-        ObservableCollection<Book> books;
+        ObservableCollection<Book> books = null;
 
 		private int CurrentBookIndex
 		{
@@ -48,25 +48,30 @@ namespace Novella
             this.InitializeComponent();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
+		protected override void OnNavigatedTo(NavigationEventArgs e)
+		{
+			base.OnNavigatedTo(e);
+			LoadBooks();
+		}
 
+
+		private async void LoadBooks()
+		{
 			try
 			{
 				books = await BookModel.GetBooksList();
-				
-				if(App.IsTrial)
+
+				if (App.IsTrial)
 				{
-					List<string> trialBooks = new List<string>{"Hamlet", "Julius Caesar", "Othello", "Romeo and Juliet"};
+					List<string> trialBooks = new List<string> { "Hamlet", "Julius Caesar", "Othello", "Romeo and Juliet" };
 					books = new ObservableCollection<Book>(books.Where(x => trialBooks.Contains(x.Name)).ToList());
 				}
 			}
-			catch(Exception)
+			catch (Exception)
 			{
 				books = null;
 			}
-            
+
 			if (books == null)
 			{
 				MessageDialog md = new MessageDialog("Oops. Error getting the books. Please restart the app.");
@@ -74,47 +79,42 @@ namespace Novella
 
 				App.Current.Exit();
 			}
-			else 
+			else
 			{
-				CoverFlow.SpaceBetweenItems = 60.0;
-				CoverFlow.ItemsSource = books;
-				
-				CoverFlow.LayoutUpdated += CoverFlow_LayoutUpdated;
-			}
+				Books.LayoutUpdated += Books_LayoutUpdated;
 
-        }
+				Books.ItemsSource = books;
+
+			}
+		}
+
+		
+		void Books_LayoutUpdated(object sender, object e)
+		{
+			Books.SelectedIndex = CurrentBookIndex;
+			Books.ScrollIntoView(books[CurrentBookIndex]);
+			Books.LayoutUpdated -= Books_LayoutUpdated;
+		}
 
 		protected override void OnNavigatedFrom(NavigationEventArgs e)
 		{
  			base.OnNavigatedFrom(e);
 		}
 
-		void CoverFlow_LayoutUpdated(object sender, object e)
-		{
-			CoverFlow.SelectedIndex = CurrentBookIndex;
-			CoverFlow.LayoutUpdated -= CoverFlow_LayoutUpdated;
-		}
-
-
+		
         private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Debug.WriteLine("SelectionChanged");
         }
 
-        private void CoverFlow_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            var selected = CoverFlow.SelectedItem;
-			CurrentBookIndex = CoverFlow.SelectedIndex;
 
-            this.Frame.Navigate(typeof(Novella.MainPage), selected);
-        }
+		private void Books_Tapped(object sender, TappedRoutedEventArgs e)
+		{
+			var selected = Books.SelectedItem;
+			CurrentBookIndex = Books.SelectedIndex;
 
-        
-        private void CoverFlow_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            //var selected = CoverFlow.SelectedItem;
-            //this.Frame.Navigate(typeof(MainPage), selected);
-        }
+			this.Frame.Navigate(typeof(Novella.MainPage), selected);
+		}
         
         
     }

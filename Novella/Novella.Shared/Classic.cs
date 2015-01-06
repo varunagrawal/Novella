@@ -26,7 +26,7 @@ namespace Novella
 			catch(Exception ex)
 			{
 				System.Diagnostics.Debug.WriteLine("Load error: " + ex.Message);
-				return null;
+				throw ex;
 			}
         }
 

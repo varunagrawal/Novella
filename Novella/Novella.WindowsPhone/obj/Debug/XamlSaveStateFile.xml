@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="d:\side projects\clappics\clappics\clappics\clappics.windowsphone\obj\debug\intermediatexaml\clappics.windowsphone.exe" HashGuid="e426e241-aada-aa26-57ff-0e72fc180805" />
-    <ReferenceAssembly PathName="d:\side projects\novella\coverflowcontrol\bin\debug\coverflowcontrol.dll" HashGuid="8e7680ed-d46a-75e8-ac9e-fcda6ab51eaa" />
+    <ReferenceAssembly PathName="d:\side projects\novella\coverflowcontrol\bin\debug\coverflowcontrol.dll" HashGuid="430587e1-a426-be76-c79f-d0885db329b8" />
     <ReferenceAssembly PathName="d:\side projects\novella\packages\winrtxamltoolkit.windowsphone.1.7.3.0\lib\wpa\winrtxamltoolkit.dll" HashGuid="cd1bf681-08b0-8bf0-5e55-db3358c3da9d" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

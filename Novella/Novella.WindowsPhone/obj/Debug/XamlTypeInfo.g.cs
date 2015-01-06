@@ -148,33 +148,19 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "Novella.About";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Novella.MainPage";
-            _typeNameTable[4] = "CoverFlowControl.CoverFlow";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[6] = "Int32";
-            _typeNameTable[7] = "Object";
-            _typeNameTable[8] = "Double";
-            _typeNameTable[9] = "Windows.UI.Xaml.Duration";
-            _typeNameTable[10] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[11] = "Novella.BooksList";
+            _typeNameTable[4] = "Novella.BooksList";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Novella.About);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Novella.MainPage);
-            _typeTable[4] = typeof(global::CoverFlowControl.CoverFlow);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[6] = typeof(global::System.Int32);
-            _typeTable[7] = typeof(global::System.Object);
-            _typeTable[8] = typeof(global::System.Double);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Duration);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[11] = typeof(global::Novella.BooksList);
+            _typeTable[4] = typeof(global::Novella.BooksList);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -211,8 +197,7 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
 
         private object Activate_0_About() { return new global::Novella.About(); }
         private object Activate_3_MainPage() { return new global::Novella.MainPage(); }
-        private object Activate_4_CoverFlow() { return new global::CoverFlowControl.CoverFlow(); }
-        private object Activate_11_BooksList() { return new global::Novella.BooksList(); }
+        private object Activate_4_BooksList() { return new global::Novella.BooksList(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -246,49 +231,9 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  CoverFlowControl.CoverFlow
-                userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_4_CoverFlow;
-                userType.AddMemberName("SelectedIndex");
-                userType.AddMemberName("SelectedItem");
-                userType.AddMemberName("SpaceBetweenItems");
-                userType.AddMemberName("SpaceBetweenSelectedItemAndItems");
-                userType.AddMemberName("RotationAngle");
-                userType.AddMemberName("ZDistance");
-                userType.AddMemberName("Scale");
-                userType.AddMemberName("SingleItemDuration");
-                userType.AddMemberName("PageDuration");
-                userType.AddMemberName("EasingFunction");
-                xamlType = userType;
-                break;
-
-            case 5:   //  Windows.UI.Xaml.Controls.ItemsControl
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  Int32
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Object
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Double
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  Windows.UI.Xaml.Duration
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
-                xamlType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  Novella.BooksList
+            case 4:   //  Novella.BooksList
                 userType = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_BooksList;
+                userType.Activator = Activate_4_BooksList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -352,183 +297,11 @@ namespace Novella.Novella_WindowsPhone_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_CoverFlow_SelectedIndex(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.SelectedIndex;
-        }
-        private void set_0_CoverFlow_SelectedIndex(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.SelectedIndex = (global::System.Int32)Value;
-        }
-        private object get_1_CoverFlow_SelectedItem(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.SelectedItem;
-        }
-        private void set_1_CoverFlow_SelectedItem(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.SelectedItem = (global::System.Object)Value;
-        }
-        private object get_2_CoverFlow_SpaceBetweenItems(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.SpaceBetweenItems;
-        }
-        private void set_2_CoverFlow_SpaceBetweenItems(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.SpaceBetweenItems = (global::System.Double)Value;
-        }
-        private object get_3_CoverFlow_SpaceBetweenSelectedItemAndItems(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.SpaceBetweenSelectedItemAndItems;
-        }
-        private void set_3_CoverFlow_SpaceBetweenSelectedItemAndItems(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.SpaceBetweenSelectedItemAndItems = (global::System.Double)Value;
-        }
-        private object get_4_CoverFlow_RotationAngle(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.RotationAngle;
-        }
-        private void set_4_CoverFlow_RotationAngle(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.RotationAngle = (global::System.Double)Value;
-        }
-        private object get_5_CoverFlow_ZDistance(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.ZDistance;
-        }
-        private void set_5_CoverFlow_ZDistance(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.ZDistance = (global::System.Double)Value;
-        }
-        private object get_6_CoverFlow_Scale(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.Scale;
-        }
-        private void set_6_CoverFlow_Scale(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.Scale = (global::System.Double)Value;
-        }
-        private object get_7_CoverFlow_SingleItemDuration(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.SingleItemDuration;
-        }
-        private void set_7_CoverFlow_SingleItemDuration(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.SingleItemDuration = (global::Windows.UI.Xaml.Duration)Value;
-        }
-        private object get_8_CoverFlow_PageDuration(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.PageDuration;
-        }
-        private void set_8_CoverFlow_PageDuration(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.PageDuration = (global::Windows.UI.Xaml.Duration)Value;
-        }
-        private object get_9_CoverFlow_EasingFunction(object instance)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            return that.EasingFunction;
-        }
-        private void set_9_CoverFlow_EasingFunction(object instance, object Value)
-        {
-            var that = (global::CoverFlowControl.CoverFlow)instance;
-            that.EasingFunction = (global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember xamlMember = null;
-            global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "CoverFlowControl.CoverFlow.SelectedIndex":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
-                xamlMember.Getter = get_0_CoverFlow_SelectedIndex;
-                xamlMember.Setter = set_0_CoverFlow_SelectedIndex;
-                break;
-            case "CoverFlowControl.CoverFlow.SelectedItem":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
-                xamlMember.Getter = get_1_CoverFlow_SelectedItem;
-                xamlMember.Setter = set_1_CoverFlow_SelectedItem;
-                break;
-            case "CoverFlowControl.CoverFlow.SpaceBetweenItems":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "SpaceBetweenItems", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_CoverFlow_SpaceBetweenItems;
-                xamlMember.Setter = set_2_CoverFlow_SpaceBetweenItems;
-                break;
-            case "CoverFlowControl.CoverFlow.SpaceBetweenSelectedItemAndItems":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "SpaceBetweenSelectedItemAndItems", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_CoverFlow_SpaceBetweenSelectedItemAndItems;
-                xamlMember.Setter = set_3_CoverFlow_SpaceBetweenSelectedItemAndItems;
-                break;
-            case "CoverFlowControl.CoverFlow.RotationAngle":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "RotationAngle", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_CoverFlow_RotationAngle;
-                xamlMember.Setter = set_4_CoverFlow_RotationAngle;
-                break;
-            case "CoverFlowControl.CoverFlow.ZDistance":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "ZDistance", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_CoverFlow_ZDistance;
-                xamlMember.Setter = set_5_CoverFlow_ZDistance;
-                break;
-            case "CoverFlowControl.CoverFlow.Scale":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "Scale", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_CoverFlow_Scale;
-                xamlMember.Setter = set_6_CoverFlow_Scale;
-                break;
-            case "CoverFlowControl.CoverFlow.SingleItemDuration":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "SingleItemDuration", "Windows.UI.Xaml.Duration");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_CoverFlow_SingleItemDuration;
-                xamlMember.Setter = set_7_CoverFlow_SingleItemDuration;
-                break;
-            case "CoverFlowControl.CoverFlow.PageDuration":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "PageDuration", "Windows.UI.Xaml.Duration");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_CoverFlow_PageDuration;
-                xamlMember.Setter = set_8_CoverFlow_PageDuration;
-                break;
-            case "CoverFlowControl.CoverFlow.EasingFunction":
-                userType = (global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CoverFlowControl.CoverFlow");
-                xamlMember = new global::Novella.Novella_WindowsPhone_XamlTypeInfo.XamlMember(this, "EasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_CoverFlow_EasingFunction;
-                xamlMember.Setter = set_9_CoverFlow_EasingFunction;
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

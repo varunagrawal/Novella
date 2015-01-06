@@ -61,5 +61,30 @@ namespace Novella
 			
         }
 
+		public static async void SetBooksList(ObservableCollection<Book> list)
+		{
+			try
+			{
+				// Get the file.
+				StorageFolder booksFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+				var file = await booksFolder.GetFileAsync("BooksList.txt");
+
+				IList<string> lines = new List<string>();
+
+				foreach (Book book in list)
+				{
+					string s = string.Format("{0}:{1}:{2}", book.Name, book.FileName, book.Cover.Substring(11));					
+					lines.Add(s);
+				}
+
+				await Windows.Storage.FileIO.WriteLinesAsync(file, lines);
+
+			}
+			catch (Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine(ex.Message);
+				throw ex;
+			}
+		}
     }
 }
