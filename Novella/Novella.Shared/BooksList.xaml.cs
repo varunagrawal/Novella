@@ -81,10 +81,11 @@ namespace Novella
 			}
 			else
 			{
-				Books.LayoutUpdated += Books_LayoutUpdated;
+				//Books.LayoutUpdated += Books_LayoutUpdated;
 
-				Books.ItemsSource = books;
-
+				Books.ItemsSource = books;				
+				Books.UpdateLayout();
+				Books.ScrollIntoView(books[CurrentBookIndex]);
 			}
 		}
 
@@ -92,7 +93,7 @@ namespace Novella
 		void Books_LayoutUpdated(object sender, object e)
 		{
 			Books.SelectedIndex = CurrentBookIndex;
-			Books.ScrollIntoView(books[CurrentBookIndex]);
+			//Books.ScrollIntoView(Books.Items[CurrentBookIndex]);
 			Books.LayoutUpdated -= Books_LayoutUpdated;
 		}
 
@@ -101,13 +102,6 @@ namespace Novella
  			base.OnNavigatedFrom(e);
 		}
 
-		
-        private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Debug.WriteLine("SelectionChanged");
-        }
-
-
 		private void Books_Tapped(object sender, TappedRoutedEventArgs e)
 		{
 			var selected = Books.SelectedItem;
@@ -115,7 +109,26 @@ namespace Novella
 
 			this.Frame.Navigate(typeof(Novella.MainPage), selected);
 		}
-        
+
+		private void Books_ItemClick(object sender, ItemClickEventArgs e)
+		{
+			Book selected = e.ClickedItem as Book;
+			CurrentBookIndex = books.IndexOf(selected);
+
+			this.Frame.Navigate(typeof(Novella.MainPage), selected);
+		}
+
+		private void Books_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			//ListView lv = (ListView)sender;
+			//Book selected = lv.SelectedItem as Book;
+			//CurrentBookIndex = lv.SelectedIndex;
+			var selected = Books.SelectedItem;
+			CurrentBookIndex = Books.SelectedIndex;
+
+			this.Frame.Navigate(typeof(Novella.MainPage), selected);
+		}
+
         
     }
 }
