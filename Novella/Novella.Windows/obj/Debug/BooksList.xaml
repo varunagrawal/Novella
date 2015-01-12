@@ -8,20 +8,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 		<TextBlock Text="Novella" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
 
+		<!--<ListBox x:Name="Books" Margin="0,124,0,0" 
+				 Tapped="Books_Tapped"
+				 Background="Black"
+				 ItemsSource="{Binding}" 
+				 ScrollViewer.HorizontalScrollMode="Auto"
+				 ScrollViewer.VerticalScrollMode="Disabled"
+				 ScrollViewer.VerticalScrollBarVisibility="Disabled"
+				 ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+				 >
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<StackPanel Orientation="Horizontal" />
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Image Source="{Binding Cover}" Height="350" Margin="12,10" />
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>-->
+
 		<ListView x:ConnectionId='1' x:Name="Books" ItemsSource="{Binding}" 
-				                        
-				  Margin="0,70,0,0" 
+				                       
+				  SelectionMode="Single"
+				  Margin="8,129,12,33" 
 				  HorizontalAlignment="Center"  
 				  VerticalAlignment="Center"
 				  ScrollViewer.HorizontalScrollBarVisibility="Auto"
 			      ScrollViewer.VerticalScrollBarVisibility="Disabled"
 				  ScrollViewer.HorizontalScrollMode="Enabled"
-			      ScrollViewer.VerticalScrollMode="Disabled"
-				  ScrollViewer.ZoomMode="Disabled"
-				  SelectionMode="None">
+			      ScrollViewer.VerticalScrollMode="Disabled" 
+				  Height="478"
+				  Width="380"
+				  >
 			<ListView.ItemsPanel>
 				<ItemsPanelTemplate>
 					<StackPanel Orientation="Horizontal" />
@@ -29,11 +52,20 @@
 			</ListView.ItemsPanel>
 			<ListView.ItemTemplate>
 				<DataTemplate>
-					<Image Source="{Binding Cover}" Height="350" Margin="12,10" />
+					<Image Source="{Binding Cover}" Height="400" Width="280"  Margin="12,10" />
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
-        
-    </Grid>
+
+	</Grid>
+
+	<Page.BottomAppBar>
+		<CommandBar IsOpen="False" IsSticky="True" >
+			<CommandBar.SecondaryCommands >
+				<AppBarButton x:ConnectionId='2' Name="About" Label="about"                     />
+			</CommandBar.SecondaryCommands>
+		</CommandBar>
+	</Page.BottomAppBar>
+	
 </Page>
 

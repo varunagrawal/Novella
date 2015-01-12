@@ -81,11 +81,11 @@ namespace Novella
 			}
 			else
 			{
-				//Books.LayoutUpdated += Books_LayoutUpdated;
+				Books.LayoutUpdated += Books_LayoutUpdated;
 
 				Books.ItemsSource = books;				
-				Books.UpdateLayout();
-				Books.ScrollIntoView(books[CurrentBookIndex]);
+				//Books.UpdateLayout();
+				//Books.ScrollIntoView(books[CurrentBookIndex]);
 			}
 		}
 
@@ -93,7 +93,7 @@ namespace Novella
 		void Books_LayoutUpdated(object sender, object e)
 		{
 			Books.SelectedIndex = CurrentBookIndex;
-			//Books.ScrollIntoView(Books.Items[CurrentBookIndex]);
+			Books.ScrollIntoView(Books.Items[CurrentBookIndex]);
 			Books.LayoutUpdated -= Books_LayoutUpdated;
 		}
 
@@ -127,6 +127,11 @@ namespace Novella
 			CurrentBookIndex = Books.SelectedIndex;
 
 			this.Frame.Navigate(typeof(Novella.MainPage), selected);
+		}
+
+		private void About_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(About));
 		}
 
         
