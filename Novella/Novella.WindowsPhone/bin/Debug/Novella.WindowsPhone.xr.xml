@@ -90,7 +90,6 @@
       <RootProperty Name="ClosedDisplayMode" />
       <RootProperty Name="SecondaryCommands" />
       <RootProperty Name="IsOpen" />
-      <RootProperty Name="IsSticky" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Name" />
@@ -110,6 +109,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsStackPanel">
+      <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

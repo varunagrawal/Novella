@@ -47,7 +47,7 @@
 				  >
 			<ListView.ItemsPanel>
 				<ItemsPanelTemplate>
-					<StackPanel Orientation="Horizontal" />
+					<ItemsStackPanel Orientation="Horizontal" />
 				</ItemsPanelTemplate>
 			</ListView.ItemsPanel>
 			<ListView.ItemTemplate>
@@ -60,7 +60,7 @@
 	</Grid>
 
 	<Page.BottomAppBar>
-		<CommandBar IsOpen="False" IsSticky="True" >
+		<CommandBar IsOpen="False" >
 			<CommandBar.SecondaryCommands >
 				<AppBarButton x:ConnectionId='2' Name="About" Label="about"                     />
 			</CommandBar.SecondaryCommands>

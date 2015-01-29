@@ -1,11 +1,8 @@
-*.pdb
-*.exe
-*.exe
-*.exe
-*.pdb
-*.exe
-*.pdb
 *.pyc
 *.dll
 *.pdb
 *.exe
+Novella/Novella.Windows/bin/
+Novella/Novella.Windows/obj/
+Novella/Novella.WindowsPhone/bin/
+Novella/Novella.WindowsPhone/obj/

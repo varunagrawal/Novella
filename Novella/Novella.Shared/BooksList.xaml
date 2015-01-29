@@ -42,12 +42,12 @@
 			      ScrollViewer.VerticalScrollBarVisibility="Disabled"
 				  ScrollViewer.HorizontalScrollMode="Enabled"
 			      ScrollViewer.VerticalScrollMode="Disabled" 
-				  Height="478"
+				  Height="490"
 				  Width="380"
 				  >
 			<ListView.ItemsPanel>
 				<ItemsPanelTemplate>
-					<StackPanel Orientation="Horizontal" />
+					<ItemsStackPanel Orientation="Horizontal" />
 				</ItemsPanelTemplate>
 			</ListView.ItemsPanel>
 			<ListView.ItemTemplate>
@@ -60,8 +60,8 @@
 	</Grid>
 
 	<Page.BottomAppBar>
-		<CommandBar IsOpen="False" IsSticky="True" >
-			<CommandBar.SecondaryCommands >
+		<CommandBar IsOpen="False">
+			<CommandBar.SecondaryCommands>
 				<AppBarButton Name="About" Label="about" Click="About_Click" />
 			</CommandBar.SecondaryCommands>
 		</CommandBar>
