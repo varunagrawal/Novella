@@ -38,5 +38,10 @@ namespace Novella
 				await new MessageDialog("Failed to launch app.").ShowAsync();
 			}
 		}
+
+		private async void Rate_Click(object sender, RoutedEventArgs e)
+		{
+			await Launcher.LaunchUriAsync(new Uri("http://www.windowsphone.com/s?appid=4db3076d-8458-4072-b252-e248d56ade0c", UriKind.RelativeOrAbsolute));
+		}
     }
 }

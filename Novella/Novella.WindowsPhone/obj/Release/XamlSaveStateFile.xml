@@ -1,7 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\side projects\novella\novella\novella.windowsphone\obj\release\intermediatexaml\novella.windowsphone.exe" HashGuid="5d61a68a-9cbd-656d-0608-7bdc3d35663a" />
-    <ReferenceAssembly PathName="d:\side projects\novella\coverflowcontrol\bin\release\coverflowcontrol.dll" HashGuid="368ffd8e-5c41-bb54-51f0-acc4f405ec17" />
+    <LocalAssembly PathName="d:\side projects\novella\novella\novella.windowsphone\obj\release\intermediatexaml\novella.windowsphone.exe" HashGuid="bc0ad058-e238-6603-3b07-12edac32939e" />
     <ReferenceAssembly PathName="d:\side projects\novella\packages\winrtxamltoolkit.windowsphone.1.7.3.0\lib\wpa\winrtxamltoolkit.dll" HashGuid="cd1bf681-08b0-8bf0-5e55-db3358c3da9d" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

@@ -1,5 +1,4 @@
-﻿using CoverFlowControl;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -18,7 +17,6 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Storage;
 using Windows.UI.Popups;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace Novella
 {
@@ -61,11 +59,11 @@ namespace Novella
 			{
 				books = await BookModel.GetBooksList();
 
-				if (App.IsTrial)
+				/*if (App.IsTrial)
 				{
 					List<string> trialBooks = new List<string> { "Hamlet", "Julius Caesar", "Othello", "Romeo and Juliet" };
 					books = new ObservableCollection<Book>(books.Where(x => trialBooks.Contains(x.Name)).ToList());
-				}
+				}*/
 			}
 			catch (Exception)
 			{
@@ -132,6 +130,11 @@ namespace Novella
 		private void About_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(About));
+		}
+
+		private void Help_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(Help));
 		}
 
         

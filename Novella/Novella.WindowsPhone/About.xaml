@@ -8,10 +8,14 @@
     mc:Ignorable="d">
 
 	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock FontSize="50" Text="Novella" TextAlignment="Center" Margin="0,0,0,573" />
-		<TextBlock FontSize="20" Text="Voyance Tech." TextAlignment="Center" Margin="0,67,0,542" />
+		<TextBlock FontSize="50" Text="Novella" TextAlignment="Center" Margin="0,10,0,558" Grid.Row="0" />
+		<TextBlock FontSize="20" Text="Voyance Tech." TextAlignment="Center" Margin="0,89,0,497" />
 
-		<Button Name="Contact" Content="Contact Us" Margin="114,255,0,328" Width="163" Click="Contact_Click" />
-		<Button Name="Rate" Content="Rate And Review" Margin="114,158,0,425" />
+		<StackPanel Orientation="Vertical" Margin="0,165,0,0" HorizontalAlignment="Center" >
+			<Button Name="Contact" Content="Contact Us"  Width="163" Click="Contact_Click" Margin="0,50,0,30" />
+			<Button Name="Rate" Content="Rate And Review" Click="Rate_Click" />
+		</StackPanel>
+		
+		<TextBlock Margin="0,497,0,0" TextAlignment="Center">Images copyright of Feedbooks</TextBlock>
 	</Grid>
 </Page>

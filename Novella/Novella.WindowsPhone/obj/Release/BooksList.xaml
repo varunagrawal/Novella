@@ -8,25 +8,46 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Available Books" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,50,0,516" />
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<TextBlock Text="Novella" FontWeight="Bold" FontSize="30" TextAlignment="Center" Margin="0,24,0,476" RenderTransformOrigin="0.512,1.712" />
 
-		<!--<controls:CoverFlow x:Name="CoverFlow" Tapped="CoverFlow_Tapped" Margin="0,167,0,56">
-			<controls:CoverFlow.ItemTemplate>
+		<ListView x:ConnectionId='1' x:Name="Books" ItemsSource="{Binding}" 
+				                       
+				  SelectionMode="Single"
+				  Margin="10,104,10,20" 
+				  HorizontalAlignment="Center"  
+				  VerticalAlignment="Center"
+				  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+			      ScrollViewer.VerticalScrollBarVisibility="Disabled"
+				  ScrollViewer.HorizontalScrollMode="Enabled"
+			      ScrollViewer.VerticalScrollMode="Disabled" 
+				  Height="456"
+				  Width="380"
+				  >
+			<ListView.ItemsPanel>
+				<ItemsPanelTemplate>
+					<ItemsStackPanel Orientation="Horizontal" />
+				</ItemsPanelTemplate>
+			</ListView.ItemsPanel>
+			<ListView.ItemTemplate>
 				<DataTemplate>
-					<Image Source="{Binding Cover}" Height="400" />
+					<Image Source="{Binding Cover}" Height="400" Width="280"  Margin="2,5,2,5" />
 				</DataTemplate>
-			</controls:CoverFlow.ItemTemplate>
-		</controls:CoverFlow>-->
+			</ListView.ItemTemplate>
+		</ListView>
 
-		<GridView x:ConnectionId='1' x:Name="Books"                       Margin="0,104,0,0" HorizontalAlignment="Center">
-			<GridView.ItemTemplate>
-				<DataTemplate>
-					<Image Source="{Binding Cover}" Height="150" Margin="10,10" />
-				</DataTemplate>
-			</GridView.ItemTemplate>
-		</GridView>
-        
-    </Grid>
+	</Grid>
+
+	<Page.BottomAppBar>
+		<CommandBar IsOpen="False" IsSticky="False" >
+			<CommandBar.PrimaryCommands>
+				<AppBarButton x:ConnectionId='2' Name="HelpIcon" Label="help" Icon="Help"                    />
+			</CommandBar.PrimaryCommands>
+			<CommandBar.SecondaryCommands>
+				<AppBarButton x:ConnectionId='3' Name="About" Label="about"                     />
+			</CommandBar.SecondaryCommands>
+		</CommandBar>
+	</Page.BottomAppBar>
+
 </Page>
 

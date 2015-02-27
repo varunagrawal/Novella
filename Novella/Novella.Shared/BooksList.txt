@@ -1,20 +1,11 @@
+A Midsummer Night's Dream:midsummer.txt:midsummer.jpg
 All's Well That Ends Well:allswell.txt:alls_well.jpg
+Antony and Cleopatra:cleopatra.txt:antony_and_cleopatra.jpg
 As You Like It:asyoulikeit.txt:asyoulikeit.jpg
 The Comedy of Errors:comedy_errors.txt:comedy_of_errors.jpg
+Coriolanus:coriolanus.txt:coriolanus.jpg
 Cymbeline:cymbeline.txt:cymbeline.jpg
-Love's Labours Lost:lll.txt:lll.jpg
-Measure for Measure:measure.txt:measure.jpg
-The Merry Wives of Windsor:merry_wives.txt:merry_wives.jpg
-The Merchant of Venice:merchant.txt:merchant.jpg
-A Midsummer Night's Dream:midsummer.txt:midsummer.jpg
-Much Ado About Nothing:much_ado.txt:much_ado.jpg
-Pericles, Prince of Tyre:pericles.txt:pericles.jpg
-Taming of the Shrew:taming_shrew.txt:taming_shrew.jpg
-The Tempest:tempest.txt:tempest.jpg
-Troilus and Cressida:troilus_cressida.txt:troilus_cressida.jpg
-Twelfth Night:twelfth_night.txt:twelfth_night.jpg
-Two Gentlemen of Verona:two_gentlemen.txt:two_gentlemen.jpg
-Winter's Tale:winters_tale.txt:winters_tale.jpg
+Hamlet:hamlet.txt:hamlet.jpg
 Henry IV, part 1:1henryiv.txt:1henryiv.jpg
 Henry IV, part 2:2henryiv.txt:2henryiv.jpg
 Henry V:henryv.txt:henryv.jpg
@@ -22,16 +13,25 @@ Henry VI, part 1:1henryvi.txt:1henryvi.jpg
 Henry VI, part 2:2henryvi.txt:2henryvi.jpg
 Henry VI, part 3:3henryvi.txt:3henryvi.jpg
 Henry VIII:henryviii.txt:henryviii.jpg
-King John:john.txt:john.jpg	
+Julius Caesar:julius_caesar.txt:julius_caesar.jpg
+King John:john.txt:john.jpg
+King Lear:lear.txt:king_lear.jpg
+Love's Labours Lost:lll.txt:lll.jpg
+Macbeth:macbeth.txt:macbeth.jpg
+Measure for Measure:measure.txt:measure.jpg
+The Merchant of Venice:merchant.txt:merchant.jpg
+The Merry Wives of Windsor:merry_wives.txt:merry_wives.jpg
+Much Ado About Nothing:much_ado.txt:much_ado.jpg
+Othello:othello.txt:othello.jpg
+Pericles, Prince of Tyre:pericles.txt:pericles.jpg
 Richard II:richardii.txt:richardii.jpg
 Richard III:richardiii.txt:richardiii.jpg
-Antony and Cleopatra:cleopatra.txt:antony_and_cleopatra.jpg
-Coriolanus:coriolanus.txt:coriolanus.jpg
-Hamlet:hamlet.txt:hamlet.jpg
-Julius Caesar:julius_caesar.txt:julius_caesar.jpg
-King Lear:lear.txt:king_lear.jpg
-Macbeth:macbeth.txt:macbeth.jpg
-Othello:othello.txt:othello.jpg
 Romeo and Juliet:romeo_juliet.txt:romeo_juliet.jpg
+Taming of the Shrew:taming_shrew.txt:taming_shrew.jpg
+The Tempest:tempest.txt:tempest.jpg
 Timon of Athens:timon.txt:timon_of_athens.jpg
 Titus Andronicus:titus.txt:titus_andronicus.jpg
+Troilus and Cressida:troilus_cressida.txt:troilus_cressida.jpg
+Twelfth Night:twelfth_night.txt:twelfth_night.jpg
+Two Gentlemen of Verona:two_gentlemen.txt:two_gentlemen.jpg
+Winter's Tale:winters_tale.txt:winters_tale.jpg

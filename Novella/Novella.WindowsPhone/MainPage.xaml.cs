@@ -20,8 +20,7 @@ using Windows.Phone.UI.Input;
 using Windows.UI.Input;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.UI.Popups;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using System.Globalization;
 
 namespace Novella
 {
@@ -49,9 +48,10 @@ namespace Novella
             base.OnNavigatedTo(e);
 			ObservableCollection<Dialogue> dialogues = new ObservableCollection<Dialogue>();
 
+			b = e.Parameter as Book;
+
 			try
 			{
-				b = e.Parameter as Book;
 				dialogues = await Classic.Load(b.FileName);
 			}
 			catch(Exception ex)
@@ -61,6 +61,7 @@ namespace Novella
 				this.Frame.GoBack();
 			}
 
+			txtTitle.Text = b.Name;
             Dialogues.DataContext = dialogues;
 
             //Dialogues.UpdateLayout();
@@ -117,8 +118,13 @@ namespace Novella
 					DataRequest dr = requestArgs.Request;
 
 					dr.Data.Properties.Title = "Novella";
+					dr.Data.Properties.ApplicationName = "Novella";
 					dr.Data.Properties.Description = b.Name;
-					dr.Data.SetText(d.Line);
+
+					StringBuilder dname = new StringBuilder(d.Name.ToLower());
+					dname[0] = char.ToUpper(dname[0]);
+
+					dr.Data.SetText(string.Format("{0} - {1} ({2}).\n#Novella", d.Line, dname.ToString(), b.Name));
 				};
 
 			DataTransferManager.ShowShareUI();

@@ -25,44 +25,89 @@ namespace Novella
     /// </summary>
     public sealed partial class App : Application
     {
-		private static bool _isTrial = CurrentApp.LicenseInformation.IsTrial;
+		private static LicenseInformation licenseInformation;
+
+		private static bool isTrial = true;
 		public static bool IsTrial
 		{
 			get
 			{
-				return _isTrial;
+				return isTrial;
+			}
+			set
+			{
+				isTrial = value;
 			}
 		}
 
-		/// <summary>
-		/// Check the current license information for this application
-		/// </summary>
-		private async void CheckLicense()
+		private void InitializeLicense()
 		{
-			// When debugging, we want to simulate a trial mode experience. The following conditional allows us to set the _isTrial 
-			// property to simulate trial mode being on or off. 
-		#if DEBUG
-			string message = "Choose license mode.";
+			licenseInformation = CurrentApp.LicenseInformation;
 
-			MessageDialog md = new MessageDialog(message);
-			md.Commands.Add(new UICommand("Active", new UICommandInvokedHandler(this.CommandInvokedHandler)));
-			md.Commands.Add(new UICommand("Trial", new UICommandInvokedHandler(this.CommandInvokedHandler)));
-
-			// Show the message dialog
-			await md.ShowAsync();
-
-		#else
-			_isTrial = false;//_license.isTrial();
-		#endif
+			licenseInformation.LicenseChanged += licenseInformation_LicenseChanged;
 		}
 
-		private void CommandInvokedHandler(IUICommand command)
+		/// <summary>
+		/// Check to see the status of the License Change
+		/// </summary>
+		private void licenseInformation_LicenseChanged()
 		{
-			if (command.Label == "Trial")
-				_isTrial = true;
-			else if (command.Label == "Active")
-				_isTrial = false;
-			
+			CheckLicenseInformation();	
+		}
+
+		private async void CheckLicenseInformation()
+		{
+			if (licenseInformation.IsActive)
+			{
+				if (licenseInformation.IsTrial)
+				{
+					App.IsTrial = true;
+
+					var longDateFormat = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("longdate");
+					int daysRemaining = (licenseInformation.ExpirationDate - DateTime.Now).Days;
+
+					daysRemaining = daysRemaining > 0 ? daysRemaining : 0;
+
+					String message = string.Format("Buy the full version to get access to all of Novella! {0} days left for your trial period.", daysRemaining);
+					MessageDialog md = new MessageDialog(message);
+					md.Commands.Add(new UICommand { Label = "Buy", Id = 0 });
+					md.Commands.Add(new UICommand { Label = "Cancel", Id = 1 });
+					var result = await md.ShowAsync();
+
+					if ((int)result.Id == 0)
+					{
+						await Windows.System.Launcher.LaunchUriAsync(new Uri(""));
+					}
+					else if ((int)result.Id == 1 && daysRemaining <= 0)
+					{
+						Exit();
+					}
+				}
+				else
+				{
+					App.IsTrial = false;
+					String message = "Thank you for buying the full version of Novella! Hope you enjoy it.";
+					MessageDialog md = new MessageDialog(message);
+					await md.ShowAsync();
+				}
+			}
+			else
+			{
+				String message = "You don't have an active license! Get the complete features.";
+				MessageDialog md = new MessageDialog(message);
+				md.Commands.Add(new UICommand { Label = "Buy", Id = 0 });
+				md.Commands.Add(new UICommand { Label = "Cancel", Id = 1 });
+				var result = await md.ShowAsync();
+
+				if ((int)result.Id == 0)
+				{
+					await Windows.System.Launcher.LaunchUriAsync(new Uri(""));
+				}
+				else if ((int)result.Id == 1)
+				{
+					Exit();
+				}
+			}
 		}
 
 #if WINDOWS_PHONE_APP
@@ -83,6 +128,8 @@ namespace Novella
             #if WINDOWS_PHONE_APP
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
             #endif
+
+			InitializeLicense();
         }
 
 		void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
@@ -194,6 +241,7 @@ namespace Novella
         {
             var deferral = e.SuspendingOperation.GetDeferral();
 
+			CheckLicenseInformation();
             // TODO: Save application state and stop any background activity
             deferral.Complete();
         }

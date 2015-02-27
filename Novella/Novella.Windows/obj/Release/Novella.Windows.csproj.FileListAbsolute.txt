@@ -38,6 +38,7 @@ D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Books\winters_tale.
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\App.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\BooksList.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\About.xbf
+D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Help.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\MainPage.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.xr.xml
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.exe
@@ -45,16 +46,14 @@ D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.pdb
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\resources.pri
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\AppxManifest.xml
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.build.appxrecipe
-D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\CoverFlowControl.dll
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\WinRTXamlToolkit.dll
-D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\CoverFlowControl.pdb
-D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\CoverFlowControl.pri
 D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\WinRTXamlToolkit.pri
-D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Novella.Windows.csprojResolveAssemblyReference.cache
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\App.g.i.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\App.g.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\About.g.i.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\About.g.cs
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Help.g.i.cs
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Help.g.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\MainPage.g.i.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\MainPage.g.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\BooksList.g.i.cs
@@ -62,10 +61,12 @@ D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\BooksList.g.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\XamlTypeInfo.g.cs
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\App.xaml
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\About.xaml
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Help.xaml
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\MainPage.xaml
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\BooksList.xaml
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\App.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\About.xbf
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Help.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\MainPage.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\BooksList.xbf
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\XamlSaveStateFile.xml
@@ -85,3 +86,4 @@ D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\qualifiers.txt.inte
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\MultipleQualifiersPerDimensionFound.txt
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\WinRTXamlToolkit.pri.xml
 D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\ProjectArchitectures.txt
+D:\Side Projects\Novella\Novella\Novella.Windows\obj\Release\Novella.Windows.csprojResolveAssemblyReference.cache

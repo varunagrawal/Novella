@@ -19,9 +19,6 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.exe">
       <PackagePath>Novella.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Release\CoverFlowControl.dll">
-      <PackagePath>CoverFlowControl.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.Windows.1.7.3.0\lib\netcore451\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
     </AppxPackagedFile>
@@ -338,17 +335,14 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\About.xbf">
       <PackagePath>About.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Help.xbf">
+      <PackagePath>Help.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Release\Themes\Generic.xbf">
-      <PackagePath>CoverFlowControl\Themes\Generic.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Release\Novella.Windows.xr.xml">
       <PackagePath>Novella.Windows.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Release\CoverFlowControl.xr.xml">
-      <PackagePath>CoverFlowControl\CoverFlowControl.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.Windows.1.7.3.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>

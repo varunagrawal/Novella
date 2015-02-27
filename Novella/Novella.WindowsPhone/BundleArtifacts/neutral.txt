@@ -1,0 +1,4 @@
+MainPackage=D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\Novella.WindowsPhone_1.1.0.1_Bundle\Novella.WindowsPhone_1.1.0.1_AnyCPU.appx
+SymbolPackage=D:\Side Projects\Novella\Novella\Novella.WindowsPhone\AppPackages\Novella.WindowsPhone_1.1.0.1_Test\Novella.WindowsPhone_1.1.0.1_AnyCPU.appxsym
+ResourcePack=D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\Novella.WindowsPhone_1.1.0.1_Bundle\Novella.WindowsPhone_1.1.0.1_scale-100.appx
+ResourcePack=D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\Novella.WindowsPhone_1.1.0.1_Bundle\Novella.WindowsPhone_1.1.0.1_scale-140.appx

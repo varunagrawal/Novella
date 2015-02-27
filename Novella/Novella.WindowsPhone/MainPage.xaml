@@ -15,9 +15,9 @@
         </Style>
     </Page.Resources>
 
-    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,50,12,0" >
-        <!--TextBlock x:Name="txtLoading" Text="Loading..." /-->
-        <ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Margin="0,0,0,26" >
+    <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,10,12,0" >
+		<TextBlock x:Name="txtTitle" Text="Title" FontSize="30" FontFamily="Segoe UI" TextAlignment="Center" Margin="0,10,0,529" Grid.Row="0" />
+		<ListView x:Name="Dialogues" HorizontalContentAlignment="Stretch" ItemsSource="{Binding}" Margin="0,76,0,10" Grid.Row="1" >
             <ListView.ItemTemplate>
                 <DataTemplate>
 

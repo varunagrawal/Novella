@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Novella.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Novella"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<TextBlock FontSize="50" Text="Help" TextAlignment="Center" Margin="0,10,0,558" Grid.Row="0" />
+		<TextBlock FontSize="20" Text="Novella" TextAlignment="Center" Margin="0,89,0,497" />
+
+		<TextBlock Name="txtHelp" FontSize="18" TextWrapping="WrapWholeWords" Margin="10,128,10,0" TextAlignment="Justify">
+			Hey! Thanks for using Novella. We hope you enjoy reading the plays in this unique format.<LineBreak/><LineBreak/>
+			Just tap any of the available plays to start reading. 
+			Once you start reading, there are two things you can do: <Bold>Bookmark</Bold> or <Bold>Share</Bold> a dialogue. Just press and hold the dialogue 
+			and you'll see the options available.<LineBreak/><LineBreak/>
+			By bookmarking, you will always start at the position you bookmarked the next time you return to the play.<LineBreak/>
+			If you wish to Share the dialogue (just as how people usually quote Shakespeare), you can tap the Share option and you 
+			get the option to share the quote with your friends, 
+			via Social Media or Private Messaging."<LineBreak/><LineBreak/>
+			Hope you enjoy using Novella!
+		</TextBlock>
+	</Grid>
+
+</Page>

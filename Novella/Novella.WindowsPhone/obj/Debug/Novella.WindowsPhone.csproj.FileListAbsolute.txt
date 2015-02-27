@@ -53,9 +53,6 @@ D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Novella.WindowsP
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Novella.WindowsPhone.pdb
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\resources.pri
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\AppxManifest.xml
-D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\CoverFlowControl.dll
-D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\CoverFlowControl.pdb
-D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\CoverFlowControl.pri
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Novella.WindowsPhone.exe
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Novella.WindowsPhone.pdb
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Novella.WindowsPhone.csproj.GenerateResource.Cache
@@ -122,3 +119,8 @@ D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Books\troilus_cr
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Books\twelfth_night.txt
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Books\two_gentlemen.txt
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Books\winters_tale.txt
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Help.xbf
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Help.g.i.cs
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Help.g.cs
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Help.xaml
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\Help.xbf

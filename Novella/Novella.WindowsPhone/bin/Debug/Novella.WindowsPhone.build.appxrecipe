@@ -19,9 +19,6 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Novella.WindowsPhone.exe">
       <PackagePath>Novella.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.dll">
-      <PackagePath>CoverFlowControl.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.WindowsPhone.1.7.3.0\lib\wpa\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
     </AppxPackagedFile>
@@ -328,17 +325,14 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Help.xbf">
+      <PackagePath>Help.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\Themes\Generic.xbf">
-      <PackagePath>CoverFlowControl\Themes\Generic.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Novella.WindowsPhone.xr.xml">
       <PackagePath>Novella.WindowsPhone.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\CoverFlowControl\bin\Debug\CoverFlowControl.xr.xml">
-      <PackagePath>CoverFlowControl\CoverFlowControl.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\packages\WinRTXamlToolkit.WindowsPhone.1.7.3.0\lib\wpa\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
