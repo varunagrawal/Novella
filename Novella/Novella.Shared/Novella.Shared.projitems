@@ -15,8 +15,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)BooksList.xaml.cs">
-      <DependentUpon>BooksList.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)BooksList_Temp.xaml.cs">
+      <DependentUpon>BooksList_Temp.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Classic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
@@ -181,7 +181,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Images\JuliusCaesar.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)BooksList.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)BooksList_Temp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

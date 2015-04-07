@@ -329,11 +329,14 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList.xbf">
-      <PackagePath>BooksList.xbf</PackagePath>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList_Temp.xbf">
+      <PackagePath>BooksList_Temp.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\BooksList.xbf">
+      <PackagePath>BooksList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.Windows\bin\Debug\Help.xbf">
       <PackagePath>Help.xbf</PackagePath>

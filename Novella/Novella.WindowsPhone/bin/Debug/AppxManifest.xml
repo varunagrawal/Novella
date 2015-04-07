@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="58772114-ae80-40ad-81ed-4c0b8c8d308d" Publisher="CN=vaagraw" Version="1.0.0.0" ProcessorArchitecture="neutral" />
-  <mp:PhoneIdentity PhoneProductId="58772114-ae80-40ad-81ed-4c0b8c8d308d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="62760varunagrawal.Novella" Publisher="CN=B7DAB062-CE20-4191-8A4A-B8F9C6C42B46" Version="1.1.1.10" ProcessorArchitecture="neutral" />
+  <mp:PhoneIdentity PhoneProductId="8598f811-c668-4936-8ca8-973cb5a632da" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Clappics.WindowsPhone</DisplayName>
-    <PublisherDisplayName>vaagraw</PublisherDisplayName>
+    <DisplayName>Novella</DisplayName>
+    <PublisherDisplayName>voyance</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>

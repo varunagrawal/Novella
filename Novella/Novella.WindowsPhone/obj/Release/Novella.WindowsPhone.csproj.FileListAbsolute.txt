@@ -48,6 +48,7 @@ D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\AppxManifest.x
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\Novella.WindowsPhone.build.appxrecipe
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\WinRTXamlToolkit.dll
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\WinRTXamlToolkit.pri
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\Novella.WindowsPhone.csprojResolveAssemblyReference.cache
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\App.g.i.cs
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\App.g.cs
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\About.g.i.cs
@@ -86,4 +87,8 @@ D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\qualifiers.txt
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\MultipleQualifiersPerDimensionFound.txt
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\WinRTXamlToolkit.pri.xml
 D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\ProjectArchitectures.txt
-D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\Novella.WindowsPhone.csprojResolveAssemblyReference.cache
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Release\BooksList_Temp.xbf
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\BooksList_Temp.g.i.cs
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\BooksList_Temp.g.cs
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\BooksList_Temp.xaml
+D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Release\BooksList_Temp.xbf

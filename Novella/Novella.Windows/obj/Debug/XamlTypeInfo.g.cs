@@ -148,21 +148,23 @@ namespace Novella.Novella_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[7];
             _typeNameTable[0] = "Novella.About";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Novella.Help";
-            _typeNameTable[4] = "Novella.MainPage";
-            _typeNameTable[5] = "Novella.BooksList";
+            _typeNameTable[3] = "Novella.BooksList";
+            _typeNameTable[4] = "Novella.Help";
+            _typeNameTable[5] = "Novella.MainPage";
+            _typeNameTable[6] = "Novella.BooksList_Temp";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[7];
             _typeTable[0] = typeof(global::Novella.About);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Novella.Help);
-            _typeTable[4] = typeof(global::Novella.MainPage);
-            _typeTable[5] = typeof(global::Novella.BooksList);
+            _typeTable[3] = typeof(global::Novella.BooksList);
+            _typeTable[4] = typeof(global::Novella.Help);
+            _typeTable[5] = typeof(global::Novella.MainPage);
+            _typeTable[6] = typeof(global::Novella.BooksList_Temp);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -198,9 +200,10 @@ namespace Novella.Novella_Windows_XamlTypeInfo
         }
 
         private object Activate_0_About() { return new global::Novella.About(); }
-        private object Activate_3_Help() { return new global::Novella.Help(); }
-        private object Activate_4_MainPage() { return new global::Novella.MainPage(); }
-        private object Activate_5_BooksList() { return new global::Novella.BooksList(); }
+        private object Activate_3_BooksList() { return new global::Novella.BooksList(); }
+        private object Activate_4_Help() { return new global::Novella.Help(); }
+        private object Activate_5_MainPage() { return new global::Novella.MainPage(); }
+        private object Activate_6_BooksList_Temp() { return new global::Novella.BooksList_Temp(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -227,23 +230,30 @@ namespace Novella.Novella_Windows_XamlTypeInfo
                 xamlType = new global::Novella.Novella_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Novella.Help
+            case 3:   //  Novella.BooksList
                 userType = new global::Novella.Novella_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Help;
+                userType.Activator = Activate_3_BooksList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Novella.MainPage
+            case 4:   //  Novella.Help
                 userType = new global::Novella.Novella_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_Help;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Novella.BooksList
+            case 5:   //  Novella.MainPage
                 userType = new global::Novella.Novella_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_BooksList;
+                userType.Activator = Activate_5_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Novella.BooksList_Temp
+                userType = new global::Novella.Novella_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_BooksList_Temp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

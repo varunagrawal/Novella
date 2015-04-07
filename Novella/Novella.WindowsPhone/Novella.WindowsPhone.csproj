@@ -17,6 +17,7 @@
     <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <AppxBundle>Always</AppxBundle>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -85,6 +86,9 @@
     <Compile Include="About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BooksList.xaml.cs">
+      <DependentUpon>BooksList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
@@ -115,11 +119,16 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-140.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BooksList.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

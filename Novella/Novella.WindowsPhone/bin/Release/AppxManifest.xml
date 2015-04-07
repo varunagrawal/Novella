@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="62760varunagrawal.Novella" Publisher="CN=B7DAB062-CE20-4191-8A4A-B8F9C6C42B46" Version="1.1.0.1" ProcessorArchitecture="neutral" />
+  <Identity Name="62760varunagrawal.Novella" Publisher="CN=B7DAB062-CE20-4191-8A4A-B8F9C6C42B46" Version="1.1.1.11" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="8598f811-c668-4936-8ca8-973cb5a632da" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Novella</DisplayName>
-    <PublisherDisplayName>varunagrawal</PublisherDisplayName>
+    <PublisherDisplayName>voyance</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>

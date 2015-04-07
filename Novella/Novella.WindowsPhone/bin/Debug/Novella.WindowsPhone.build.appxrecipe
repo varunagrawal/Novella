@@ -6,7 +6,7 @@
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>58772114-ae80-40ad-81ed-4c0b8c8d308d</PackageIdentityName>
+    <PackageIdentityName>8598f811-c668-4936-8ca8-973cb5a632da</PackageIdentityName>
     <IntermediateOutputPath>D:\Side Projects\Novella\Novella\Novella.WindowsPhone\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -84,6 +84,9 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
@@ -319,11 +322,14 @@
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf">
-      <PackagePath>BooksList.xbf</PackagePath>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList_Temp.xbf">
+      <PackagePath>BooksList_Temp.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\BooksList.xbf">
+      <PackagePath>BooksList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Side Projects\Novella\Novella\Novella.WindowsPhone\bin\Debug\Help.xbf">
       <PackagePath>Help.xbf</PackagePath>

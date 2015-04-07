@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.Store;
 using Windows.UI.Popups;
+using System.Threading.Tasks;
 
 namespace Novella
 {
@@ -40,22 +41,24 @@ namespace Novella
 			}
 		}
 
-		private void InitializeLicense()
+		private bool InitializeLicense()
 		{
 			licenseInformation = CurrentApp.LicenseInformation;
 
-			licenseInformation.LicenseChanged += licenseInformation_LicenseChanged;
+			//licenseInformation.LicenseChanged += licenseInformation_LicenseChanged;
+
+			return licenseInformation.IsTrial;
 		}
 
 		/// <summary>
 		/// Check to see the status of the License Change
 		/// </summary>
-		private void licenseInformation_LicenseChanged()
+		private async void licenseInformation_LicenseChanged()
 		{
-			CheckLicenseInformation();	
+			await CheckLicenseInformation();	
 		}
 
-		private async void CheckLicenseInformation()
+		public async static Task CheckLicenseInformation()
 		{
 			if (licenseInformation.IsActive)
 			{
@@ -63,25 +66,24 @@ namespace Novella
 				{
 					App.IsTrial = true;
 
-					var longDateFormat = new Windows.Globalization.DateTimeFormatting.DateTimeFormatter("longdate");
-					int daysRemaining = (licenseInformation.ExpirationDate - DateTime.Now).Days;
-
-					daysRemaining = daysRemaining > 0 ? daysRemaining : 0;
-
-					String message = string.Format("Buy the full version to get access to all of Novella! {0} days left for your trial period.", daysRemaining);
+					String message = string.Format("Buy the full version to get access to all of Novella!");
 					MessageDialog md = new MessageDialog(message);
 					md.Commands.Add(new UICommand { Label = "Buy", Id = 0 });
 					md.Commands.Add(new UICommand { Label = "Cancel", Id = 1 });
 					var result = await md.ShowAsync();
 
+					if (result == null)
+						App.Current.Exit();
+
 					if ((int)result.Id == 0)
 					{
-						await Windows.System.Launcher.LaunchUriAsync(new Uri(""));
+						await Windows.System.Launcher.LaunchUriAsync(new Uri("http://www.windowsphone.com/s?appid=4db3076d-8458-4072-b252-e248d56ade0c"));
 					}
-					else if ((int)result.Id == 1 && daysRemaining <= 0)
+					else if ((int)result.Id == 1)
 					{
-						Exit();
+						//Exit();
 					}
+
 				}
 				else
 				{
@@ -101,11 +103,11 @@ namespace Novella
 
 				if ((int)result.Id == 0)
 				{
-					await Windows.System.Launcher.LaunchUriAsync(new Uri(""));
+					await Windows.System.Launcher.LaunchUriAsync(new Uri("http://www.windowsphone.com/s?appid=4db3076d-8458-4072-b252-e248d56ade0c"));
 				}
 				else if ((int)result.Id == 1)
 				{
-					Exit();
+					//Exit();
 				}
 			}
 		}
@@ -128,8 +130,6 @@ namespace Novella
             #if WINDOWS_PHONE_APP
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
             #endif
-
-			InitializeLicense();
         }
 
 		void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
@@ -142,7 +142,7 @@ namespace Novella
         {
             Frame rootFrame = Window.Current.Content as Frame;
 
-            if (rootFrame != null && rootFrame.CanGoBack)
+            if (rootFrame != null && rootFrame.CanGoBack && !e.Handled)
             {
                 e.Handled = true;
                 rootFrame.GoBack();
@@ -166,6 +166,8 @@ namespace Novella
 #endif
 
             Frame rootFrame = Window.Current.Content as Frame;
+
+			App.IsTrial = InitializeLicense();
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
@@ -241,8 +243,7 @@ namespace Novella
         {
             var deferral = e.SuspendingOperation.GetDeferral();
 
-			CheckLicenseInformation();
-            // TODO: Save application state and stop any background activity
+			// TODO: Save application state and stop any background activity
             deferral.Complete();
         }
 

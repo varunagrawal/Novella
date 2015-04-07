@@ -13,9 +13,10 @@
 
 		<StackPanel Orientation="Vertical" Margin="0,165,0,0" HorizontalAlignment="Center" >
 			<Button x:ConnectionId='1' Name="Contact" Content="Contact Us"  Width="163"                       Margin="0,50,0,30" />
-			<Button Name="Rate" Content="Rate And Review" />
+			<Button x:ConnectionId='2' Name="Rate" Content="Rate And Review"                    />
 		</StackPanel>
 		
+		<TextBlock Margin="0,497,0,0" TextAlignment="Center">Images copyright of Feedbooks</TextBlock>
 	</Grid>
 </Page>
 

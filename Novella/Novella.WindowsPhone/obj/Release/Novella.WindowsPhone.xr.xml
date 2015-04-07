@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Cover" />
     <RootPropertyPathName Name="BgColor" />
     <RootPropertyPathName Name="Line" />
     <RootPropertyPathName Name="Alignment" />
     <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="Cover" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
+      <RootProperty Name="BottomAppBar" />
       <RootProperty Name="Background" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="BottomAppBar" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -29,13 +29,13 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Name" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Height" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="MinHeight" />
-      <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
@@ -53,6 +53,59 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Novella.About" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsStackPanel">
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="IsSticky" />
+      <RootProperty Name="PrimaryCommands" />
+      <RootProperty Name="SecondaryCommands" />
+      <RootProperty Name="ClosedDisplayMode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Label" />
+      <RootProperty Name="Icon" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Novella.BooksList" />
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Documents.Bold">
       <RootProperty Name="Inlines" />
@@ -66,23 +119,6 @@
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="HorizontalContentAlignment" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="SelectionMode" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="ItemsPanel" />
-      <RootEvent Name="Tapped" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />
       <RootMethod Name="SetAttachedFlyout" />
@@ -95,42 +131,7 @@
       <RootProperty Name="Text" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
-      <RootProperty Name="ClosedDisplayMode" />
-      <RootProperty Name="SecondaryCommands" />
-      <RootProperty Name="IsOpen" />
-      <RootProperty Name="IsSticky" />
-      <RootProperty Name="PrimaryCommands" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Name" />
-      <RootProperty Name="Label" />
-      <RootProperty Name="Icon" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Novella.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootMethod Name="GetHorizontalScrollBarVisibility" />
-      <RootMethod Name="SetHorizontalScrollBarVisibility" />
-      <RootMethod Name="GetVerticalScrollBarVisibility" />
-      <RootMethod Name="SetVerticalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollMode" />
-      <RootMethod Name="SetHorizontalScrollMode" />
-      <RootMethod Name="GetVerticalScrollMode" />
-      <RootMethod Name="SetVerticalScrollMode" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ItemsStackPanel">
-      <RootProperty Name="Orientation" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="Novella.BooksList" />
+    <RootType FullName="Novella.BooksList_Temp" />
   </Roots.RootTypes>
 </Roots>
